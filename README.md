@@ -10,7 +10,7 @@ Icons: https://iconscout.com/unicons
 ###
 Fonts: https://fonts.google.com/
 ####
-GitHub: https://github.com/sifcruder
+GitHub: https://github.com/softcruder
 #####
 Swiper: https://swiperjs.com/
 
@@ -18,7 +18,9 @@ Swiper: https://swiperjs.com/
 ⚙️ Other Utilities
 ##
 Remove the background from your image
-https://www.remove.bg/
+https://www.remove.bg/![Screenshot (182)](https://user-images.githubusercontent.com/60460558/139151820-2be93657-122b-4f93-bb48-ec6a39416a3c.png)
+![Screenshot (181)](https://user-images.githubusercontent.com/60460558/139151892-aee23b00-912d-4fa7-9e10-ccaf5d15ef24.png)
+
 
 ###
 HSL color mode
