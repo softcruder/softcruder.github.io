@@ -1,0 +1,28 @@
+.arwBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: .6rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+    text-transform: uppercase;
+}
+
+.arwText {
+    margin-right: 10px;
+}
+
+.arwBtn:hover {
+    background-color: transparent;
+    color: var(--text-color);
+    transform: scale(1.1)!important;
+    -webkit-transform: scale(1.1)!important;
+    -moz-transform: scale(1.1)!important;
+    -ms-transform: scale(1.1)!important;
+    -o-transform: scale(1.1)!important;
+}
