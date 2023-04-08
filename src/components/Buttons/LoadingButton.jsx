@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 import styles from '@/styles/Button.module.css';
+import { BtnLoader } from '@components/ButtonOps';
 
-const Button = (props) => {
-  const { text, href, target = '_blank' } = props;
+const ButtonLoad = (props) => {
+  const { text, href, target = '_blank', isLoading } = props;
   const buttonProps = href ? { href: href, target: target } : {};
   const ButtonElement = href ? 'a' : 'button';
 
@@ -36,9 +37,9 @@ const Button = (props) => {
       {...buttonProps}
       {...props}
     >
-      {text}
+      {isLoading ? <BtnLoader /> : text}
     </ButtonElement>
   );
 };
 
-export default Button;
+export default ButtonLoad;

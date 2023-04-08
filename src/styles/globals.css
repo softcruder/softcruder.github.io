@@ -29,7 +29,12 @@
   font-style: normal;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
+  display: flex;
   margin: 0;
   min-height: 100%;
   background-color: #101010;
@@ -37,4 +42,10 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }

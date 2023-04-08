@@ -54,6 +54,12 @@
   transition: background 200ms, border 200ms;
 }
 
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color)!important;
+}
+
 .card span {
   display: inline-block;
   transition: transform 200ms;

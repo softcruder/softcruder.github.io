@@ -5,7 +5,10 @@
     padding: .6rem 1.6rem;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -13,16 +16,18 @@
     text-transform: uppercase;
 }
 
+.arrow-right {
+    margin-right: 10px;
+}
+
+.arrow-left {
+    margin-left: 10px;
+}
+
 .arwText {
     margin-right: 10px;
 }
 
-.arwBtn:hover {
-    background-color: transparent;
-    color: var(--text-color);
-    transform: scale(1.1)!important;
-    -webkit-transform: scale(1.1)!important;
-    -moz-transform: scale(1.1)!important;
-    -ms-transform: scale(1.1)!important;
-    -o-transform: scale(1.1)!important;
+a.arwText:hover {
+    text-decoration: none !important;
 }

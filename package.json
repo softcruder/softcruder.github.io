@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "gsap": "^3.8.0",

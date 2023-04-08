@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .label {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  
+  .input[type="text"],
+  .input[type="email"],
+  .textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .input[type="text"],
+  .input[type="email"] {
+    height: 40px;
+  }
+  
+  .textarea {
+    height: 150px;
+  }
+
+  .message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  p .message {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  

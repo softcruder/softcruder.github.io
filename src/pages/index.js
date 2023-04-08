@@ -13,7 +13,7 @@ export default function Home() {
         <title>Nasirullah Oladipo | Home</title>
         <meta name="description" content="Generat" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
@@ -23,7 +23,7 @@ export default function Home() {
           </p>
           <p>
             Or view first post &nbsp;
-            <code className={styles.code}><Link href="/posts/first-post"> src/pages/posts/first-post.js </Link></code>
+            <code className={styles.code}><Link className="styles.link" href="/posts/first-post"> src/pages/posts/first-post.js </Link></code>
             <Link href="/posts/first-post">this page!</Link>
           </p>
           <div>
