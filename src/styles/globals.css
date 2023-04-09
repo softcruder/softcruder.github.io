@@ -34,7 +34,6 @@
 }
 
 body {
-  display: flex;
   margin: 0;
   min-height: 100%;
   background-color: #101010;
@@ -48,4 +47,26 @@ a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  :root {
+    --big-title: 8vw/9vw DM Sans;
+    --h1: 48px/54px DM Sans;
+    --h2: 42px/48px DM Sans;
+    --h3: 36px/42px DM Sans;
+    --h4: 30px/36px DM Sans;
+    --h5: 24px/30px DM Sans;
+    --h6: 18px/26px DM Sans;
+    --capitalized-subtitle: 24px/30px Questrial;
+    --muted-text: 16px/20px Questrial;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  
 }

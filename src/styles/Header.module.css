@@ -1,4 +1,3 @@
-/* Header container */
 .header {
     display: flex !important;
     position: fixed;
@@ -13,21 +12,12 @@
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
   }
-  
-  /* Scrolled header */
-  .header.scrolled {
-    background-color: #fff;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Logo container */
+
   .logo-container {
     display: flex;
     align-items: center;
   }
-  
-  /* Logo link */
+
   .logo-link {
     display: block;
     width: 3rem;

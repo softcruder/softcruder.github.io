@@ -17,20 +17,20 @@ const Contact = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label className={styles.label} htmlFor="name">Name</label>
-      <input className={styles.input} id="name" type="text" name="name" required />
+      <label className={styles.label} htmlFor="name">Name*</label>
+      <input className={styles.input} id="name" type="text" name="name" placeholder="enter your name" required />
       <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-      <label className={styles.label} htmlFor="subject">Subject</label>
-      <input className={styles.input} id="subject" type="text" name="subject" required />
+      <label className={styles.label} htmlFor="subject">Subject*</label>
+      <input className={styles.input} id="subject" type="text" name="subject" placeholder="what is the subject of your message?" required />
       <ValidationError prefix="Subject" field="subject" errors={state.errors} />
 
-      <label className={styles.label} htmlFor="email">Email Address</label>
-      <input className={styles.input} id="email" type="email" name="email" required />
+      <label className={styles.label} htmlFor="email">Email Address*</label>
+      <input className={styles.input} id="email" type="email" name="email" placeholder="enter your email here" required />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label className={styles.label} htmlFor="message">Message</label>
-      <textarea className={styles.textarea} id="message" name="message" required />
+      <label className={styles.label} htmlFor="message">Message*</label>
+      <textarea className={styles.textarea} id="message" name="message" placeholder="type in your message here" required />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
       <Button

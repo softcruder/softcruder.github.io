@@ -1,11 +1,15 @@
-const logotext = "S";
+const logotext = "&lt;SOFTCRUDER /&gt;";
 const meta = {
     title: "Nasirullah Oladipo",
     subtitle: "Frontend developer",
-    description: "I'm a frontend developer with few months of experience. I'm currently helping to build amazing experiences at update_work.",
+    description: "I'm a frontend developer, I'm currently helping to build amazing experiences at {updateWork}.",
+    updateWork: "Nil",
+    favicon: "/favicon.png",
 };
 
-const introdata = {
+
+
+const introData = {
     title: "I'm Nasirullah Oladipo",
     animated: {
         first: "I love coding",
@@ -17,12 +21,12 @@ const introdata = {
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
-const dataabout = {
+const dataAbout = {
     title: "My Story",
-    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I enrolled at AltSchool Africa to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js Next.js, CSS, Redux, and other frameworks like. I'm currently looking for a frontend role in Frontend Engineering.",
+    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I came across a tweet by @hackSultan about AltSchool Africa and the work they do, while i have looking for a well structured course with flexible payment options, and just when news of an industrial action by academic staff union of universities, AltSchool fits in just perfectly to my wants and situation. I enrolled at AltSchool Africa as part of the premier AltSchoolers to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js, CSS & CSS Preprocessors, Redux, and other frameworks like Next.js. I also work with no-code tools like Webflow. I'm currently looking for a frontend role in Frontend Engineering.",
 };
 
-const proficientskills = [{
+const proficientSkills = [{
         name: "CSS",
     },
     {
@@ -32,21 +36,21 @@ const proficientskills = [{
         name: "React",
     },
     {
-        name: "Vue.js",
+        name: "Redux",
     },
     {
         name: "Next.js",
     },
 ];
 
-const skills = [{
-        name: "CSS",
+const otherSkills = [{
+        name: "SCSS",
     },
     {
-        name: "JavaScript",
+        name: "Tailwind CSS",
     },
     {
-        name: "React",
+        name: "React + Vite",
     },
     {
         name: "Vue.js",
@@ -57,9 +61,12 @@ const skills = [{
 ];
 
 const experience = [{
-    jobtitle: "Designer of week",
+    jobtitle: "Junior Frontend Developer",
     where: "YAdfi",
-    date: "2020",
+    type: "Intern",
+    duration: " months",
+    startDate: "April, 2023",
+    endDate: "October, 2023",
 },
 {
     jobtitle: "Designer of week",
@@ -87,7 +94,7 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
+const dataPortfolio = [{
         img: "https://picsum.photos/400/?grayscale",
         title: "",
         description: "The wisdom of life consists in the elimination of non-essentials.",
@@ -125,8 +132,8 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "softcruder@softcruder.me",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_EMAIL: "hey@softcruder.me",
+    YOUR_FONE: "(234)90 106 067 48",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
@@ -135,22 +142,22 @@ const contactConfig = {
     YOUR_USER_ID: "user_id",
 };
 
-const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+const socialProfils = {
+    github: "https://github.com/softcruder",
+    facebook: "https://facebook.com/nasirullah-oladipo",
+    linkedin: "https://linkedin.com/in/nasirullah-oladipo",
+    twitter: "https://twitter.com/NasirOladipo",
 };
 export {
     meta,
-    dataabout,
-    dataportfolio,
+    dataAbout,
+    dataPortfolio,
     experience,
-    proficientskills,
-    skills,
+    proficientSkills,
+    otherSkills,
     services,
-    introdata,
+    introData,
     contactConfig,
-    socialprofils,
+    socialProfils,
     logotext,
 };

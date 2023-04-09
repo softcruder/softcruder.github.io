@@ -1,73 +1,140 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import styles from "@/styles/Header.module.css";
+import Image from "next/image";
 
-const Header = () => {
+function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
-  };
-
-  useEffect(() => {
-    function handleScroll() {
-      setScrollPosition(window.scrollY);
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (scrollPosition > 0 && !isScrolled) {
-      setIsScrolled(true);
-    } else if (scrollPosition === 0 && isScrolled) {
-      setIsScrolled(false);
-    }
-  }, [scrollPosition, isScrolled]);
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
+  }
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className={styles["logo-container"]}>
-        <Link href="/" className={styles["logo-link"]}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff"><circle cx="12" cy="12" r="10"/><path d="m14.31 8 5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16 3.95 6.06M14.31 16H2.83m13.79-4-5.74 9.94"/></svg>
-        </Link>
-      </div>
-      <div className={styles["menu-container"]}>
-        <button className={styles["menu-icon"]} onClick={toggleMenu}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21"><g fill="none" stroke="#fff"><path data-name="Line 2" d="M0 .5h32"/><path data-name="Line 3" d="M0 10.5h32"/><path data-name="Line 4" d="M0 20.5h32"/></g></svg>
-        </button>
-        <div
-          className={`${styles["menu-items-container"]} ${
-            menuOpen ? styles.open : ""
-          }`}
-        >
-        <div className={styles["close-button-container"]}>
-          <button className={styles["close-button"]} onClick={toggleMenu}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff"><path d="M18 6 6 18M6 6l12 12"/></svg>
-          </button>
+    <>
+      <header>
+        <div className="brand">
+          <div className="logo">
+            <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
+          </div>
+          <div className="menu-icon" onClick={toggleMenu}>
+            <Image
+              src="/images/burger.svg"
+              alt="Menu Burger"
+              className="burger"
+              width={24}
+              height={24}
+            />
+          </div>
         </div>
-          <nav className={styles["menu-items"]}>
+        {menuOpen && (
+          <div className="menu-container">
             <ul>
               <li>
-                <Link href="/" className="styles.link"> Home </Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="styles.link"> About </Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/contact" className="styles.link"> Contact </Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+            <div className="close-icon" onClick={toggleMenu}>
+              <Image
+                src="/images/close.svg"
+                alt="Close Menu"
+                width={24}
+                height={24}
+              />
+              CLOSE
+            </div>
+          </div>
+        )}
+        <style jsx>{`
+          header {
+            background-color: transparent;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 98vw;
+          }
+          .brand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 20px;
+          }
+          .logo {
+            padding: 5px;
+            border: 1px solid var(--secondary-color);
+            justify-content: flex-start;
+          }
+          .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+          }
+          .menu-icon {
+            align-content: flex-end;
+            margin-right: 10px;
+          }
+          .menu-icon img {
+            cursor: pointer;
+          }
+          .menu-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-color) !important;
+            box-shadow: 0px 0px 69px rgba(16, 16, 16, 0.5);
+          }
+          .menu-container ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          .menu-container li {
+            padding: 10px 20px;
+          }
+          .menu-container li:first-child {
+            border-top: none;
+          }
+          .close-icon {
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+          }
+          
+          .close-icon img {
+            margin-right: 5px;
+          }
+          @media (min-width: 768px) {
+            header {
+              height: 60px;
+            }
+            .brand {
+              padding: 0 10px;
+            }
+            .menu-icon {
+              margin-right: 0;
+            }
+          }
+        `}</style>
+      </header>
+    </>
   );
-};
+}
 
 export default Header;

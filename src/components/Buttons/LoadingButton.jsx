@@ -13,8 +13,8 @@ const ButtonLoad = (props) => {
   const handleHover = () => {
     gsap.to(buttonRef.current, {
       duration: 0.5,
-      backgroundColor: 'var(--secondary-color)',
-      color: 'var(--primary-color)',
+      backgroundColor: 'transparent',
+      color: 'var(--text-color)',
       ease: 'power2.out',
     });
   };

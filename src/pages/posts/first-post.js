@@ -8,9 +8,9 @@ const FirstPost = () => {
     <>
     <Header />
       <h1>See First Post</h1>
-      <Button text="Click me!" href="https://softcruder.github.io" />
-    <ArrowButton text="Click me!" href="https://softcruder.github.io" direction="right" />
-    <ArrowButton text="Click me!" href="https://softcruder.github.io" direction="left" />
+      <Button text="Click me" href="https://softcruder.github.io" />
+    <ArrowButton text="right button" href="https://softcruder.github.io" direction="right" />
+    <ArrowButton text="left button" href="https://softcruder.github.io" direction="left" />
     <Contact />
     </>
   );
