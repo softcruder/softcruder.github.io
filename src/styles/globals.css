@@ -49,6 +49,29 @@ a {
   text-transform: uppercase;
 }
 
+.big-title {
+  font-size: var(--big-title);
+  line-height: var(--big-title);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.page-title {
+  margin-top: 24px;
+  margin-bottom: 80px;
+  text-align: center
+}
+
+.page-title.section-header {
+  margin-bottom: 16px
+}
+
+.style-guide-title-2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center
+}
+
 
 
 

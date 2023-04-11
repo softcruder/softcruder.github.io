@@ -2,7 +2,7 @@ import React from 'react';
 const BtnLoader = () => {
     return (
       <div className="animated-svg">
-        <svg width="24px" height="24px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <svg width="20px" height="20px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" style={{ stopColor: "#5a58ff", stopOpacity: 1 }} />

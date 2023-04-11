@@ -14,20 +14,49 @@
     cursor: pointer;
     font-family: 'Questrial', sans-serif;
     text-transform: uppercase;
-}
-
-.arrow-right {
+  }
+  
+  .arrow-right {
     margin-right: 10px;
-}
-
-.arrow-left {
+  }
+  
+  .arrow-left {
     margin-left: 10px;
-}
-
-.arwText {
+  }
+  
+  .arwText {
     margin-right: 10px;
-}
-
-a.arwText:hover {
+  }
+  
+  .arwBtn:hover .arrow-right {
+    background-image: url('/images/btn-arrow-right-lg.svg');
+    animation: growRightArrow 0.2s ease-in-out forwards;
+  }
+  
+  .arwBtn:hover .arrow-left {
+    background-image: url('/images/btn-arrow-left-lg.svg');
+    animation: growLeftArrow 0.2s ease-in-out forwards;
+  }
+  
+  @keyframes growRightArrow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
+  
+  @keyframes growLeftArrow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3) scaleX(-1);
+    }
+  }
+  
+  a.arwText:hover {
     text-decoration: none !important;
-}
+  }
+  

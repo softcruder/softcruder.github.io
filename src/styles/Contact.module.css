@@ -6,27 +6,76 @@
   }
   
   .label {
-    font-size: 1.1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
     margin-bottom: 0.4rem;
   }
+
+  /* CSS for the required asterisk */
+label.required::before {
+  content: '*';
+  color: red;
+  margin-left: 3px;
+}
+
+/* CSS for the tooltip */
+.tooltip {
+  position: relative;
+  color: #fff;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.8rem;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+  
   
   .input[type="text"],
   .input[type="email"],
   .textarea {
-    padding: 0.5rem;
+    margin-bottom: 48px;
+    padding: 2px 0;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #000 #000 hsla(0,0%,100%,.3);
+    border-radius: 0;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--text-color-2);
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
 }
 
   .input[type="text"],
   .input[type="email"],
-  textarea.textarea::placeholder {
+  .textarea::placeholder {
     color: var(--text-color-2);
-    font-size: 1.1rem;
+    font-size: .8rem;
+}
+
+  .input[type="text"],
+  .input[type="email"]:focus {
+    border-bottom: 1px solid hsla(0,0%,100%,.3);
+    outline: none;
+}
+
+  textarea.textarea:focus {
+    border-bottom: 1px solid hsla(0,0%,100%,.3);
+    outline: none;
 }
   
   .input[type="text"],
@@ -38,17 +87,73 @@
     height: 150px;
   }
 
-  .message-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .input[type=file] {
+    border: none;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: var(--h6);
     color: var(--text-color-2);
-    height: 100%;
   }
   
-  p .message {
-    text-align: center;
-    text-transform: uppercase;
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    animation: fadein 0.5s, fadeout 0.5s 14.5s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+  }
+  
+  .modal.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  .modal.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  .modalHeading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .modalContent {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
   }
   
   
