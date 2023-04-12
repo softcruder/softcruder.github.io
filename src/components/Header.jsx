@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-function Header() {
+function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <>
-      <header>
+      <header className={props.isSticky ? "sticky" : ""} style={{ backgroundColor: props.isTransparent ? "transparent" : "var(--primary-color)" }}>
         <div className="brand">
           <div className="logo">
             <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
@@ -29,14 +29,14 @@ function Header() {
         {menuOpen && (
           <div className="menu-container">
             <ul>
-              <li>
-                <Link href="/">Home</Link>
+              <li className="menu-item">
+                <Link href="/" >Home</Link>
               </li>
-              <li>
-                <Link href="/about">About</Link>
+              <li className="menu-item">
+                <Link href="/about" >About</Link>
               </li>
-              <li>
-                <Link href="/contact">Contact</Link>
+              <li className="menu-item">
+                <Link href="/contact" >Contact</Link>
               </li>
             </ul>
             <div className="close-icon" onClick={toggleMenu}>
@@ -105,6 +105,10 @@ function Header() {
           .menu-container li {
             padding: 10px 20px;
           }
+          .menu-item a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+          }
           .menu-container li:first-child {
             border-top: none;
           }
@@ -122,10 +126,13 @@ function Header() {
           }
           @media (min-width: 768px) {
             header {
-              height: 60px;
+              height: 70px;
             }
             .brand {
               padding: 0 10px;
+            }
+            .logo {
+              margin-left: 10px;
             }
             .menu-icon {
               margin-right: 0;
@@ -137,4 +144,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

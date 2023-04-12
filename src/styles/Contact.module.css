@@ -15,6 +15,7 @@ label.required::before {
   content: '*';
   color: red;
   margin-left: 3px;
+  z-index: -1;
 }
 
 /* CSS for the tooltip */
@@ -44,8 +45,6 @@ label.required::before {
   visibility: visible;
 }
 
-  
-  
   .input[type="text"],
   .input[type="email"],
   .textarea {

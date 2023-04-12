@@ -4,6 +4,7 @@ import Header from "@/components/Header.jsx";
 import Contact from "@/components/Contact";
 import { dataAbout } from "@/components/content-option";
 import MainLoader from "@/components/MainPageLoader";
+import Footer from "@/components/Footer";
 
 const FirstPost = () => {
 
@@ -17,6 +18,7 @@ const FirstPost = () => {
     <ArrowButton text="right button" href="https://softcruder.github.io" direction="right" />
     <ArrowButton text="left button" href="https://softcruder.github.io" direction="left" />
     <Contact />
+    <Footer />
     </>
   );
 };

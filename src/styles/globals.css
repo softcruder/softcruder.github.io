@@ -1,5 +1,6 @@
 :root {
-  --bg-color: #101010;
+  --bg-color: #222;
+  --black-bg-color: #101010;
   --primary-color: #0d0d0d;
   --secondary-color: #FFFFFF;
   --text-color: #fff;
@@ -70,6 +71,15 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-align: center
+}
+
+.numbering, ol li {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: Questrial,sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 0 0 16px rgba(16,16,16,.3);
 }
 
 
