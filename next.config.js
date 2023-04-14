@@ -3,4 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+
+
+module.exports = {
+
+  basePath: '/',
+
+  assetPrefix: 'https://softcruder.me',
+
+}
