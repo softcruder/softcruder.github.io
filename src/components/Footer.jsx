@@ -17,12 +17,12 @@ function Footer() {
           <ul>
             <li>
               <Link href="/protected">
-                <span className="footer-item">Protected</span> 
+                <span className="footer-item">Resume</span> 
               </Link>
             </li>
             <li>
-              <Link href="/404">
-              <span className="footer-item">404</span>
+              <Link href="https://softcruder.github.io/v1">
+              <span className="footer-item">version 1.*</span>
               </Link>
             </li>
             <li>

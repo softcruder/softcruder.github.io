@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 import styles from '@/styles/Button.module.css';
-import { BtnLoader } from '@components/ButtonOps';
+import { BtnLoader } from '@/components/Buttons/ButtonOps';
 
 const ButtonLoad = (props) => {
   const { text, href, target = '_blank', isLoading } = props;

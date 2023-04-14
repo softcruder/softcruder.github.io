@@ -94,11 +94,15 @@
   
   .preloader .strike {
     width: 70%;
-    height: 2px;
-    border-radius: 50%;
+    height: 4px;
+    border-radius: 60%;
     background-color: #A9A9A9;
     transform: scaleX(0);
     animation: strikeAnimation 0.5s ease-in-out forwards 3.5s;
+    -webkit-border-radius: 60%;
+    -moz-border-radius: 60%;
+    -ms-border-radius: 60%;
+    -o-border-radius: 60%;
 }
   
   @keyframes strikeAnimation {

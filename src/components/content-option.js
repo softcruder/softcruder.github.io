@@ -3,7 +3,7 @@ const meta = {
     title: "Nasirullah Oladipo",
     subtitle: "Frontend developer",
     description: "I'm a frontend developer, I'm currently helping to build amazing experiences at {updateWork}.",
-    updateWork: "Nil",
+    updateWork: "Raenest",
     favicon: "/favicon.png",
 };
 
@@ -17,8 +17,9 @@ const introData = {
         second: "I write cool interactive scripts",
         third: "I use React.js, Next.js, TailwindCSS, Redux, and more.",
     },
-    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm currently helping to build amazing experiences at update_work.",
+    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm currently helping to build amazing experiences at Raenest.",
     notWorkingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm looking to get a frontend role in Frontend Engineering.",
+    update_work: "<Link href={https://raenest.com}>Raenest</Link>",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 

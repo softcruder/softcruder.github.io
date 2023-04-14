@@ -17,7 +17,7 @@
   }
   
   .arrow-right {
-    margin-right: 10px;
+    margin-left: 20px;
   }
   
   .arrow-left {
@@ -25,7 +25,7 @@
   }
   
   .arwText {
-    margin-right: 10px;
+    margin-right: 0px;
   }
   
   .arwBtn:hover .arrow-right {
@@ -60,3 +60,9 @@
     text-decoration: none !important;
   }
   
+  @media screen and (max-width: 991px) {
+    .arwBtn {
+      font-size: 14px;
+      line-height: 18px;
+  }
+  }

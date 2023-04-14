@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Button from "@/components/Buttons/Button";
-import BtnLoader from "@/components/ButtonOps";
-import styles from "@/styles/Contact.module.css";
+import BtnLoader from "@/components/Buttons/ButtonOps";
+import styles from "@/styles/ContactForm.module.css";
 import classNames from "classnames";
 
-const Contact = () => {
+const ContactForm = () => {
   const [state, handleSubmit] = useForm("xjvdpvrv");
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState("");
   const [modalMessage, setModalMessage] = useState("");
-  const labelClasses = classNames(styles.label, styles.required, styles.tooltip);
+  const labelClasses = classNames(
+    styles.label,
+    styles.required,
+    styles.tooltip
+  );
 
   const handleFileChange = (event) => {
     const files = event.target.files;
@@ -47,7 +51,11 @@ const Contact = () => {
 
   return (
     <form className={styles.form} onSubmit={handleFormSubmit}>
-      <label className={labelClasses} htmlFor="name" data-tooltip="Please enter your name">
+      <label
+        className={labelClasses}
+        htmlFor="name"
+        data-tooltip="Please enter your name"
+      >
         Name
       </label>
       <input
@@ -73,7 +81,11 @@ const Contact = () => {
       />
       <ValidationError prefix="Subject" field="subject" errors={state.errors} />
 
-      <label className={labelClasses} htmlFor="email" data-tooltip="Please enter your email address">
+      <label
+        className={labelClasses}
+        htmlFor="email"
+        data-tooltip="Please enter your email address"
+      >
         Email Address
       </label>
       <input
@@ -86,7 +98,11 @@ const Contact = () => {
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label className={labelClasses} htmlFor="message" data-tooltip="Please enter your message">
+      <label
+        className={labelClasses}
+        htmlFor="message"
+        data-tooltip="Please enter your message"
+      >
         Message
       </label>
       <textarea
@@ -136,4 +152,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

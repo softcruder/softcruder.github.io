@@ -1,5 +1,4 @@
 import React from 'react';
-import '@/styles/Layout.module.css';
 
 const Layout = ({ title, component }) => {
   return (
