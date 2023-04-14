@@ -1,0 +1,127 @@
+.header {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-link {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  /* Menu container */
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Menu icon */
+  .menu-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Menu items container */
+  .menu-items-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    z-index: 999;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  
+  /* Open menu items container */
+  .menu-items-container.open {
+    transform: translateX(0);
+  }
+  
+  /* Close button container */
+  .close-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  /* Close button */
+  .close-button {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Menu items */
+  .menu-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Menu item link */
+  .menu-items li {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-items a {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .menu-items a:hover,
+  .menu-items a:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Menu items glow effect */
+  .menu-items-container::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    z-index: 999999;
+  }
+  
