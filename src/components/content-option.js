@@ -10,7 +10,8 @@ const meta = {
 
 
 const introData = {
-    title: "I'm Nasirullah Oladipo",
+    title: "Nasirullah Oladipo",
+    subtitle: "Frontend developer",
     animated: {
         first: "I love coding",
         second: "I write cool interactive scripts",

@@ -111,7 +111,7 @@ function Footer() {
         }
 
         .logo {
-          font-size: 5px;
+          line-height: 10;
         }
 
         @media (min-width: 768px) {

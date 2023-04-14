@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { isMobile } from "react-device-detect";
 
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ function Navbar(props) {
 
   return (
     <>
-      <header className={props.isSticky ? "sticky" : ""} style={{ backgroundColor: props.isTransparent ? "transparent" : "var(--primary-color)" }}>
+      <header className={props.isSticky ? "sticky" : ""} style={{ backgroundColor: props.isTransparent && isMobile ? "transparent"  : "var(--primary-color)", }}>
         <div className="brand">
           <div className="logo">
             <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
@@ -53,11 +54,15 @@ function Navbar(props) {
         <style jsx>{`
           header {
             background-color: transparent;
+            top: 0;
             height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 98vw;
+            width: 100vw;
+          }
+          .sticky {
+            position: fixed;
           }
           .brand {
             display: flex;
@@ -73,7 +78,7 @@ function Navbar(props) {
           }
           .logo a {
             font-size: 24px;
-            font-weight: bold;
+            font-weight: normal;
             color: #333;
             text-decoration: none;
           }
@@ -94,7 +99,7 @@ function Navbar(props) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: var(--bg-color) !important;
+            background-color: var(--black-bg-color) !important;
             box-shadow: 0px 0px 69px rgba(16, 16, 16, 0.5);
           }
           .menu-container ul {
