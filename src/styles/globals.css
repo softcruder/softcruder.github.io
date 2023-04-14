@@ -59,10 +59,9 @@ p {
 }
 
 .big-title {
-  font-size: var(--big-title);
-  line-height: var(--big-title);
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: 8vw;
+  line-height: 9vw;
+  font-weight: 500;
 }
 
 .page-title {

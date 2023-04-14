@@ -1,18 +1,41 @@
-import React, { useEffect, useState } from "react";
-import Card from "../components/Card";
+import React, { useState, useEffect } from "react";
+import LogCard from "@/components/LogCard";
+import Navbar from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const Changelog = ({ commits }) => {
+const Changelog = () => {
+    const [commits, setCommits] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/changelog")
+      .then((res) => res.json())
+      .then((data) => setCommits(data))
+      .catch((err) => console.log(err));
+  }, []);
   return (
-    <div className="changelog">
+    <>
+    <Navbar isSticky={true} />
+    <section className="changelog">
       <span className="big-title">Changelog</span>
-      {commits.map((commit) => (
-        <Card
-          key={commit.sha}
-          date={new Date(commit.commit.author.date).toLocaleDateString()}
-          message={commit.commit.message}
-        />
-      ))}
-    </div>
+      {commits && commits.map((commit) => (
+  <LogCard
+    key={commit.sha}
+    date={new Date(commit.commit.author.date).toLocaleDateString()}
+    message={commit.commit.message}
+  />
+))}
+
+      <Footer />
+    </section>
+    <style jsx>{`
+    span.big-title {
+        display: block;
+        position: relative;
+        margin-top: 76px;
+        text-align: center;
+    }
+    `}</style>
+    </>
   );
 };
 
