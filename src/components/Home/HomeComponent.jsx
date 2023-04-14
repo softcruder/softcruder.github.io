@@ -72,8 +72,8 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           }
 
           h2 {
-            font-size: 2vw;
-            line-height: 2.1vw;
+            font-size: 2rem;
+            line-height: 2.5rem;
             letter-spacing: .5px;
             text-transform: capitalize;
             font-weight: 400;
@@ -128,7 +128,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           }
           @media screen and (max-width: 767px) {
             section {
-              background-size: 100% auto;
+              background-size: cover;
             }
           }
           
