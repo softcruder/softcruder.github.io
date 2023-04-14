@@ -2,14 +2,14 @@
     background-color: transparent;
     border: none;
     color: var(--text-color);
-    padding: .6rem 1.6rem;
+    padding: .25rem 1.2rem;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    font-size: 16px;
+    font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Questrial', sans-serif;
@@ -62,7 +62,8 @@
   
   @media screen and (max-width: 991px) {
     .arwBtn {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 18px;
+        padding: .2rem;
   }
   }
