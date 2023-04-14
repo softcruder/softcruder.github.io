@@ -16,8 +16,8 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             <h2>{subtitle}</h2>
             <p>{intro}</p>
             <div className="button-container">
-              <Button text="Projects" href="/projects" />
-              <ArrowButton text="More About Me" href="/about" direction="right" />
+              <Button text="Projects" href="/projects" target="_self" />
+              <ArrowButton text="About Me" href="/about" direction="right" />
             </div>
             <div className="social-icons">
                 <span>FOLLOW ME</span>
@@ -72,7 +72,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           }
 
           h2 {
-            font-size: 2rem;
+            font-size: 1.4rem;
             line-height: 2.5rem;
             letter-spacing: .5px;
             text-transform: capitalize;
@@ -117,13 +117,14 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               }
 
             .content-container {
-                max-width: 70vw;
+                max-width: 85vw;
             }
             .button-container {
               display: flex;
               flex-direction: column;
               gap: 1rem;
               margin-top: 2rem;
+              margin-bottom: 1.3rem;
             }
           }
           @media screen and (max-width: 767px) {
