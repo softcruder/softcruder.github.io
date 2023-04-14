@@ -77,11 +77,12 @@ const NotFound = () => {
             justify-content: center;
             align-items: center;
             gap: 2;
+            margin: 3% 10%;
           }
 
           .utility-content {
             display: flex;
-            max-width: 40vw;
+            max-width: 60vw;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -105,7 +106,7 @@ const NotFound = () => {
             margin-bottom: 10px;
           }
           h1{
-            font-size: 2vw;
+            font-size: 3rem;
           }
 
           .muted-text {
