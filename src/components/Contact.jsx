@@ -46,7 +46,7 @@ const ContactForm = () => {
       setShowModal(false);
       setModalType("");
       setModalMessage("");
-    }, 15000);
+    }, 10000);
   };
 
   return (
