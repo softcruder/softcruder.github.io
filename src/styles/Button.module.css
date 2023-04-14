@@ -2,7 +2,7 @@
     background-color: transparent;
     border: 1px solid var(--secondary-color);
     color: var(--text-color);
-    padding: .6rem 1.6rem;
+    padding: .6rem 1rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -22,6 +22,7 @@
 @media screen and (max-width: 991px) {
   .btn {
     font-size: 12px;
+      padding: .3rem;
     line-height: 18px;
 }
 }
