@@ -113,6 +113,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
                 background-repeat: no-repeat;
                 background-size: 100% auto;
                 background-position: center center;
+                color: var(--primary-color);
               }
 
             .content-container {
