@@ -1,0 +1,68 @@
+.arwBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: .6rem 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .arrow-right {
+    margin-left: 20px;
+  }
+  
+  .arrow-left {
+    margin-left: 10px;
+  }
+  
+  .arwText {
+    margin-right: 0px;
+  }
+  
+  .arwBtn:hover .arrow-right {
+    background-image: url('/images/btn-arrow-right-lg.svg');
+    animation: growRightArrow 0.2s ease-in-out forwards;
+  }
+  
+  .arwBtn:hover .arrow-left {
+    background-image: url('/images/btn-arrow-left-lg.svg');
+    animation: growLeftArrow 0.2s ease-in-out forwards;
+  }
+  
+  @keyframes growRightArrow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
+  
+  @keyframes growLeftArrow {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3) scaleX(-1);
+    }
+  }
+  
+  a.arwText:hover {
+    text-decoration: none !important;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .arwBtn {
+      font-size: 14px;
+      line-height: 18px;
+  }
+  }

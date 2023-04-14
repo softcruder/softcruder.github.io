@@ -1,0 +1,75 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid transparent;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .logoImage {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 767px) {
+    .logoImage {
+      content: url('/images/smartphone-white.svg');
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .logoImage {
+      content: url('/images/monitor-white.svg');
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .loader {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-width: 0.15rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .loader {
+      width: 4rem;
+      height: 4rem;
+      border-width: 0.2rem;
+    }
+  }
+  

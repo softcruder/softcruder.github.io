@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #222;
+  --black-bg-color: #101010;
+  --primary-color: #0d0d0d;
+  --secondary-color: #FFFFFF;
+  --text-color: #fff;
+  --text-color-2: #888888;
+  --big-title: 8vw/9vw DM Sans;
+  --h1: 48px/54px DM Sans;
+  --h2: 42px/48px DM Sans;
+  --h3: 36px/42px DM Sans;
+  --h4: 30px/36px DM Sans;
+  --h5: 24px/30px DM Sans;
+  --h6: 18px/26px DM Sans;
+  --capitalized-subtitle: 24px/30px Questrial;
+  --muted-text: 16px/20px Questrial;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('/fonts/Questrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #101010;
+  font-family: 'DM Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Questrial,sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.big-title {
+  font-size: 8vw;
+  line-height: 9vw;
+  font-weight: 500;
+}
+
+.page-title {
+  margin-top: 24px;
+  margin-bottom: 80px;
+  text-align: center
+}
+
+.page-title.section-header {
+  margin-bottom: 16px
+}
+
+.style-guide-title-2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center
+}
+
+.numbering, ol li {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: Questrial,sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-shadow: 0 0 16px rgba(16,16,16,.3);
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  :root {
+    --big-title: 8vw/9vw DM Sans;
+    --h1: 48px/54px DM Sans;
+    --h2: 42px/48px DM Sans;
+    --h3: 36px/42px DM Sans;
+    --h4: 30px/36px DM Sans;
+    --h5: 24px/30px DM Sans;
+    --h6: 18px/26px DM Sans;
+    --capitalized-subtitle: 24px/30px Questrial;
+    --muted-text: 16px/20px Questrial;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  
+}
