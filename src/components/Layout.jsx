@@ -17,6 +17,7 @@ const Layout = ({ title, component }) => {
 
       .section-block {
         display: flex;
+        flex-direction: row;
       }
       
       .title {
@@ -26,13 +27,13 @@ const Layout = ({ title, component }) => {
       }
 
       .big-title {
-        font-size: 6vw;
+        font-size: 3rem;
         line-height: 46px;
       }
       
       .component {
+      display: flex;
         align-content: flex-end;
-        width: 100%;
       }
     
       .padded {
@@ -41,6 +42,8 @@ const Layout = ({ title, component }) => {
       @media screen and (max-width: 991px)
       .section-block {
         margin-top: 20px;
+       
+        flex-directiom: column;
       }
       `}</style>
     </section>
