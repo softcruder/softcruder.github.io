@@ -41,11 +41,21 @@ function ProjectsPage () {
   }
 
   return (
+    <>
+    <span className="big-title">Portfolio</span>
     <div className="projects-list">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
     </div>
+    <style jsx>{`
+    span.big-title {
+      display: block;
+      font-size: 3rem;
+      font-weight: 500;
+  }
+    `}</style>
+    </>
   );
 }
 

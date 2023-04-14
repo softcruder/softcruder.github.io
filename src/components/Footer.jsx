@@ -45,7 +45,7 @@ function Footer() {
           align-items: center;
           background-color: var(--primary-color);
           color: var(--text-color-2);
-          padding: 10px 0;
+          padding: 5px 0;
           margin-top: 20px;
           font-size: 12px;
           line-height: 18px;

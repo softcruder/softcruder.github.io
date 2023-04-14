@@ -1,26 +1,27 @@
 [
     {
       "id": 1,
-      "name": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "/images/project1.png",
-      "demoLink": "https://github.com/project1",
-      "detailsLink": "/projects/project1"
+      "name": "Sofcruder v2",
+      "description": "Second iteration of my portfolio",
+      "image": "/images/project-1.png",
+      "demoLink": "https://softcruder.me",
+      "githubLink": "https://github.com/softcruder/softcruder.github.io",
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "image": "/images/project2.png",
-      "demoLink": "https://github.com/project2",
-      "detailsLink": "/projects/project2"
+      "name": "My Repositories",
+      "description": "Third semester exam project @AltSchool Africa.",
+      "image": "/images/project-2.png",
+      "demoLink": "https://softcruder.me/third-semester-vue",
+      "githubLink": "https://github.com/softcruder/third-semester-vue",
     },
     {
       "id": 3,
-      "name": "Project 3",
-      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "image": "/images/project3.png",
-      "demoLink": "https://github.com/project2"
+      "name": "Holiday Assignments",
+      "description": "This project compiles the submission of 84 students taking a course, can be modified for an even greater number.",
+      "image": "/images/project-3.png",
+      "demoLink": "https://cpt-submission.netlify.app",
+      "githubLink": "https://github.com/softcruder/final-submissions",
     }
   ]
   

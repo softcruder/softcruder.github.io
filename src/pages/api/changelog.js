@@ -1,4 +1,3 @@
-import { Octokit } from "@octokit/rest";
 import { getAllCommits } from "@/utils/github";
 
 export default async function handler(req, res) {

@@ -16,7 +16,7 @@ const LogCard = ({ date, message }) => {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 11% 10%;
+        margin: 3% 10% 6% 10%;
       }
 
       h3 {

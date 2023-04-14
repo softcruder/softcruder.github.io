@@ -37,6 +37,9 @@ function Navbar(props) {
                 <Link href="/about" >About</Link>
               </li>
               <li className="menu-item">
+                <Link href="/projects" >Projects</Link>
+              </li>
+              <li className="menu-item">
                 <Link href="/contact" >Contact</Link>
               </li>
             </ul>
@@ -101,6 +104,7 @@ function Navbar(props) {
             align-items: center;
             background-color: var(--black-bg-color) !important;
             box-shadow: 0px 0px 69px rgba(16, 16, 16, 0.5);
+            z-index: 999;
           }
           .menu-container ul {
             list-style: none;
