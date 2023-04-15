@@ -1,27 +1,27 @@
 [
     {
-      "id": 1,
-      "name": "Sofcruder v2",
-      "description": "Second iteration of my portfolio",
+      "id": "uwWqo8",
+      "name": "Softcruder v2",
+      "description": "Second iteration of my portfolio website.",
       "image": "/images/project-1.png",
       "demoLink": "https://softcruder.me",
-      "githubLink": "https://github.com/softcruder/softcruder.github.io",
+      "githubLink": "https://github.com/softcruder/softcruder.github.io"
     },
     {
-      "id": 2,
+      "id": "ehRwo5",
       "name": "My Repositories",
-      "description": "Third semester exam project @AltSchool Africa.",
+      "description": "A project i made for the third semester exam project @AltSchool Africa.",
       "image": "/images/project-2.png",
       "demoLink": "https://softcruder.me/third-semester-vue",
-      "githubLink": "https://github.com/softcruder/third-semester-vue",
+      "githubLink": "https://github.com/softcruder/third-semester-vue"
     },
     {
-      "id": 3,
+      "id": "igNos3",
       "name": "Holiday Assignments",
       "description": "This project compiles the submission of 84 students taking a course, can be modified for an even greater number.",
-      "image": "/images/project-3.png",
+      "image": "/images/project-3png.png",
       "demoLink": "https://cpt-submission.netlify.app",
-      "githubLink": "https://github.com/softcruder/final-submissions",
+      "githubLink": "https://github.com/softcruder/final-submissions"
     }
   ]
   
