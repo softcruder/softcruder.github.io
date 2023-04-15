@@ -107,6 +107,7 @@ const NotFound = () => {
           }
           h1{
             font-size: 3rem;
+            font-height: 3.5rem;
           }
 
           .muted-text {
