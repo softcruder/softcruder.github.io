@@ -130,9 +130,35 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           @media screen and (max-width: 767px) {
             section {
               background-size: cover;
+              color: var(--secondary-color);
             }
             p {
             color: var(--secondary-color) !important;
+            }
+            split {
+              max-height: 350px;
+              overflow: none;
+            }
+            h2, p {
+              font-size: 2.5vw;
+              line-height: 3.5vw;
+              letter-spacing: .2px;
+            }
+            .content-container {
+              width: 100%;
+              padding: 0 32px 0 32px;
+              margin-top: 35%;
+            }
+            .big-title {
+              margin-bottom: 1rem;
+            }
+            .button-container {
+              margin-top: 1rem;
+              margin-bottom: .65rem;
+              flex-direction: column-reverse;
+            }
+            .social-icons {
+              color: var(--secondary-color);
             }
           }
           

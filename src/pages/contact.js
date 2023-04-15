@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Header from "@/components/Header";
+import Navbar from "@/components/Header";
 import Contact from "@/components/Contact";
-import { meta } from "@/components/content-option";
 import Footer from "@/components/Footer";
 
 const ContactPage = () => {
@@ -14,32 +13,70 @@ const ContactPage = () => {
           content="Want to send me a message or you are trying scout me? Use the form to contact me."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href={meta.favicon} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <section className="wrap-form">
+      <Navbar isSticky={true} isTransparent={false} />
+      <section className="wrap-page">
         <div className="contact-block">
-          <h1 className="project-title">Contact</h1>
-          <Contact />
+          <span className="big-title">Contact</span>
+          <div className="form-component"><Contact /></div>
         </div>
       </section>
       <Footer />
       <style jsx>{`
-        .wrap-form {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        section {
+          position: relative;
+          padding: 11% 10%;
         }
 
         .contact-block {
           display: flex;
           flex-direction: row;
-          align-items: center;
-          height: 100vh;
+          justify-content: space-between;
         }
-        
-        .project-title {
-          align-self: flex-end;
+
+        span {
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .big-title {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 4vw;
+          line-height: 5vw;
+          font-weight: 500;
+          text-shadow: 0 0 16px rgba(16,16,16,.3);
+        }
+
+        .form-component {
+          margin-top: 20px;
+          min-width: 400px;
+        }
+
+        @media screen and (max-width: 991px) {
+          .wrap-page {
+            margin-top: 46px;
+            padding-top: 40px;
+          }
+          .contact-block {
+            display: block;
+          }
+          .big-title {
+            font-size: 36px;
+            line-height: 42px;
+          }
+          .form-component {
+            margin-top: 10px;
+            min-width: 100%;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .big-title {
+            margin-bottom: 10px;
+            font-size: 24px;
+            line-height: 30px;
+          }
         }
         
       `}</style>

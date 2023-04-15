@@ -76,7 +76,7 @@ const ContactForm = () => {
         id="subject"
         type="text"
         name="subject"
-        placeholder="what is the subject of your message?"
+        placeholder="enter a subject "
         required
       />
       <ValidationError prefix="Subject" field="subject" errors={state.errors} />
@@ -109,7 +109,7 @@ const ContactForm = () => {
         className={styles.textarea}
         id="message"
         name="message"
-        placeholder="type in your message here"
+        placeholder="how can i help you today?"
         required
       ></textarea>
       <ValidationError prefix="Message" field="message" errors={state.errors} />

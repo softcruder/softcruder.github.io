@@ -20,7 +20,7 @@ export default function Home() {
     <>
       {loading ? <MainLoader /> : null}
       <Navbar isSticky={true} isTransparent={true} />
-      <HomeLayout title={introData.title} subtitle={introData.subtitle} intro={introData.workingDescription} />
+      <HomeLayout title={introData.title} subtitle={introData.subtitle} intro={introData.notWorkingDescription} />
     </>
   );
 }
