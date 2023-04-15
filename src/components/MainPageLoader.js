@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import styles from '@/styles/MainPageLoader.module.css';
 import { useRouter } from 'next/router';
+import { isMobile } from "react-device-detect";
 
 const MainLoader = () => {
   const router = useRouter();
 
   const deviceIcon = () => {
-    const isMobile = typeof window !== 'undefined' && /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
+
     return isMobile ? (
       <Image src="/images/smartphone-white.svg" width={64} height={64} alt="Smartphone Icon" />
     ) : (

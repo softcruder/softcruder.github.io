@@ -97,7 +97,7 @@ function Navbar(props) {
             top: 0;
             left: 0;
             width: 100%;
-            height: 30vw;
+            height: 35vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -129,7 +129,7 @@ function Navbar(props) {
             display: flex;
             align-items: center;
           }
-          
+
           .close-icon img {
             margin-right: 5px;
           }
@@ -145,6 +145,9 @@ function Navbar(props) {
             }
             .menu-icon {
               margin-right: 0;
+            }
+            .menu-container {
+            height: 40vh;
             }
           }
         `}</style>

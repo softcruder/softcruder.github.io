@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import ProjectCard from '@/components/Projects/ProjectCard';
 import Preloader from '@/components/Preloader';
+import Navbar from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function ProjectsPage () {
   const [projects, setProjects] = useState([]);
@@ -42,12 +44,14 @@ function ProjectsPage () {
 
   return (
     <>
+    <Navbar isSticky={true} isTransparent={false}/>
     <span className="big-title">Portfolio</span>
     <div className="projects-list">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
     </div>
+<Footer />
     <style jsx>{`
     span.big-title {
       display: block;
