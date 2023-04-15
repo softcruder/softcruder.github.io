@@ -84,7 +84,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             margin-bottom: 3rem;
           }
 
-          span, h2, p {
+          span, h2 , p {
             text-align: left;
           }
   
@@ -111,7 +111,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             section {
                 background-image: url(/images/home-profile.jpg);
                 background-repeat: no-repeat;
-                background-size: 100% auto;
+                background-size: cover;
                 background-position: center center;
                 color: var(--primary-color);
               }
@@ -130,6 +130,9 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           @media screen and (max-width: 767px) {
             section {
               background-size: cover;
+            }
+            p {
+            color: var(--secondary-color) !important;
             }
           }
           
