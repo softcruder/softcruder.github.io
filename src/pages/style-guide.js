@@ -12,7 +12,7 @@ const StyleGuide = () => {
                 <span className="big-title">Style Guide</span>
                 <div className="style-guide__container">
                     <div className="style-guide__container__card">
-                        <Image src="/images/no-file.svg" width={64} height={64} />
+                        <Image src="/images/no-file.svg" alt='No content yet' width={64} height={64} />
                         <br />
                         <p>No Content here yet! <br/> Still compiling style guide.</p>
                     </div>
