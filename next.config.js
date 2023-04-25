@@ -7,8 +7,8 @@ const nextConfig = {
 
 module.exports = {
 
-  basePath: '/',
+  basePath: '',
 
- assetPrefix: 'https://softcruder.me',
+ // assetPrefix: 'https://softcruder.me',
 
 }
