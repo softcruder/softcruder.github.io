@@ -159,6 +159,7 @@
   
   @media screen and (max-width: 991px) {
     .preloader .text {
+      font-size: 20px;
       animation: mobileTextAnimation 1s ease-in-out forwards 2.5s;
     }
 

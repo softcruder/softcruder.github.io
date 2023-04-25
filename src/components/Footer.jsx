@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-section footer-links">
           <ul>
             <li>
-              <Link href="/resume">
+              <Link href="https://drive.google.com/file/d/1LOMg55AFEPw9RhffC7U3vDXoXUiJxefj/view?usp=share_link" target="_blank">
                 <span className="footer-item">Resume</span> 
               </Link>
             </li>
