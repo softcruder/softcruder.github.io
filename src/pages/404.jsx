@@ -15,7 +15,7 @@ const NotFound = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/public/favicon.ico" />
       </Head>
-      <div className="utility-container">
+      <section className="utility-container">
         <div className="utility-content">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const NotFound = () => {
             align-items: center;
             gap: 2;
             margin: 3% 10%;
-            height: 100vh;
+            height: 90vh;
           }
 
           .utility-content {
@@ -121,7 +121,7 @@ const NotFound = () => {
             text-transform: uppercase;
           }
         `}</style>
-      </div>
+      </section>
     </>
   );
 };

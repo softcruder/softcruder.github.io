@@ -71,6 +71,7 @@ const Changelog = () => {
       span {
         margin-top: 40px;
         padding-top: 40px;
+        padding-bottom: 20px;
         text-align: center;
         display: block;
       }
