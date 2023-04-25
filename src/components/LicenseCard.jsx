@@ -27,7 +27,7 @@ const LicenseCard = ({ heading, messageParts }) => {
           display: flex;
           align-items: center;
           flex-direction: column;
-          margin: 5% 10% 6% 10%;
+          margin: 5% 12% 6% 12%;
         }
 
         h1 {
@@ -40,8 +40,8 @@ const LicenseCard = ({ heading, messageParts }) => {
         a.alt-link {
           text-transform: lowercase;
           text-decoration: underline;
-          color: #dbdbdb;
-          font-weight: bold;
+          color: #a1a1a1;
+          font-weight: normal;
         }
 
         .card-heading {
@@ -53,6 +53,25 @@ const LicenseCard = ({ heading, messageParts }) => {
           padding: 4rem;
           text-align: left;
           border-top: 1px solid #464646;
+        }
+        @media (max-width: 768px) {
+          .card {
+            margin: 7% 15% 8% 15%;
+          }
+          h1 {
+            font-size: 18px;
+            line-height: 24px;
+          }
+          .card-heading {
+            padding: 10px;
+          }
+          .card-content {
+            padding: 2rem;
+          }
+          .card-message {
+            font-size: 14px;
+            line-height: 20px;
+          }
         }
       `}</style>
     </section>

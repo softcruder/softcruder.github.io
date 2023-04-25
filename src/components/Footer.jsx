@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-section footer-links">
           <ul>
             <li>
-              <Link href="/protected">
+              <Link href="/resume">
                 <span className="footer-item">Resume</span> 
               </Link>
             </li>
@@ -45,7 +45,7 @@ function Footer() {
           align-items: center;
           background-color: var(--primary-color);
           color: var(--text-color-2);
-          padding: 5px 0;
+          padding: 5px;
           margin-top: 20px;
           font-size: 12px;
           line-height: 18px;
@@ -71,8 +71,8 @@ function Footer() {
 
         .footer-section p {
           margin: 0;
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 16px;
+          line-height: 22px;
           letter-spacing: .4px;
         }
 
@@ -83,7 +83,7 @@ function Footer() {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 10px;
+          gap: 5px;
         }
 
         .footer-links li {
@@ -94,6 +94,8 @@ function Footer() {
           text-decoration: none;
           color: var(--text-color-2);
           text-transform: capitalize !important;
+          font-size: 16px;
+          line-height: 22px;
         }
 
         .footer-item:hover {
@@ -110,13 +112,10 @@ function Footer() {
           color: var(--text-color);
         }
 
-        .logo {
-          line-height: 10;
-        }
-
         @media (min-width: 768px) {
           .footer-container {
             flex-direction: row;
+            justify-content: space-between;
           }
           .footer-section {
             flex: 1;
@@ -125,15 +124,39 @@ function Footer() {
             text-align: left;
           }
           .footer-section p {
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 18px;
+          }
+          .footer-item {
+            font-size: 12px;
+            line-height: 18px;
           }
           .footer-links {
             display: flex;
             justify-content: flex-end;
-            padding: 0 20px;
+            padding: 0 10px;
           }
           .footer-links li {
-            padding: 0 10px;
+            padding: 0 5px;
+            text-wrap: normal;
+          }
+        }
+
+        @media (max-width: 767px) {
+          .footer-container {
+            flex-direction: column;
+          }
+          .footer-section{
+            text-align: center;
+            padding: 0;
+          }
+          .footer-section p {
+            font-size: 10px;
+            line-height: 16px;
+          }
+          .footer-item {
+            font-size: 10px;
+            line-height: 16px;
           }
         }
       `}</style>

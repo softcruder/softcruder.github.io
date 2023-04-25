@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 import ProjectCard from '@/components/Projects/ProjectCard';
 import Preloader from '@/components/Preloader';
 import Navbar from "@/components/Header";
@@ -44,13 +45,22 @@ function ProjectsPage () {
 
   return (
     <>
+    <Head>
+        <title> Projects | Softcruder </title>
+        <meta
+          name="description"
+          content="Some projects I'm working and have worked on are listed on this page, explore."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <Navbar isSticky={true} isTransparent={false}/>
     <span className="big-title">Portfolio</span>
-    <div className="projects-list">
+    <section className="projects-list">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
-    </div>
+    </section>
     <Footer />
     <style jsx>{`
       span {

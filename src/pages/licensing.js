@@ -1,3 +1,4 @@
+import Head from "next/head";
 import LicenseCard from "@/components/LicenseCard";
 import Navbar from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,6 +6,15 @@ import Footer from "@/components/Footer";
 function LicensingPage() {
   return (
     <>
+    <Head>
+        <title> Licensing | Softcruder</title>
+        <meta
+          name="description"
+          content="Guidelines on license to implement the layout of this website as a project or for your portfolio."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <Navbar isSticky={true} transparent={false} />
     <div className="licensing">
       <span className="big-title">Licensing</span>
@@ -24,6 +34,14 @@ function LicensingPage() {
     .big-title{
         font-size: 3rem;
         font-weight: 500;
+    }
+    @media (max-width: 767px) {
+      .big-title {
+        font-size: 48px;
+        line-height: 54px;
+        margin-top: 15%;
+        margin-bottom: 50px;
+      }
     }
     `}</style>
     </>

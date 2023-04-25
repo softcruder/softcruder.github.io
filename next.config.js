@@ -9,6 +9,6 @@ module.exports = {
 
   basePath: '/',
 
-  assetPrefix: 'https://softcruder.me',
+ assetPrefix: 'https://softcruder.me',
 
 }
