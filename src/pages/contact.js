@@ -7,14 +7,12 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <title> Contact Me </title>
-        <meta
-          name="description"
-          content="Want to send me a message or you are trying scout me? Use the form to contact me."
-        />
+        <title> Contact Me | Softcruder </title>
+        <meta name="description" content="Want to send me a message or you are trying scout me? Use the form to contact me."/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <Navbar isSticky={true} isTransparent={false} />
       <section className="wrap-page">
         <div className="contact-block">
@@ -25,8 +23,8 @@ const ContactPage = () => {
       <Footer />
       <style jsx>{`
         section {
-          position: relative;
           padding: 11% 10%;
+          background-color: var(--bg-color);
         }
 
         .contact-block {
@@ -55,6 +53,9 @@ const ContactPage = () => {
         }
 
         @media screen and (max-width: 991px) {
+          section {
+            background-color: var(--black-bg-color);
+          }
           .wrap-page {
             margin-top: 46px;
             padding-top: 40px;
@@ -63,19 +64,19 @@ const ContactPage = () => {
             display: block;
           }
           .big-title {
-            font-size: 36px;
-            line-height: 42px;
+            font-size: 42px;
+            line-height: 48px;
+            margin-bottom: 30px;
           }
           .form-component {
-            margin-top: 10px;
             min-width: 100%;
           }
         }
         @media screen and (max-width: 767px) {
           .big-title {
-            margin-bottom: 10px;
-            font-size: 24px;
-            line-height: 30px;
+            margin-bottom: 30px;
+            font-size: 30px;
+            line-height: 36px;
           }
         }
         

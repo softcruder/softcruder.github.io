@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
 
+
 function Navbar(props) {
   const [menuOpen, setMenuOpen] = useState(false);
 

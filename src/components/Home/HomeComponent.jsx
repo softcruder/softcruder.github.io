@@ -20,7 +20,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               <ArrowButton text="About Me" href="/about" direction="right" />
             </div>
             <div className="social-icons">
-                <span>FOLLOW ME</span>
+                <span className="social-text">FOLLOW ME</span>
                 <br />
               <Link href="https://twitter.com/NasirOladipo" target="_blank">
                 <span className="twitter">{<SlSocialTwitter />}</span>
@@ -37,6 +37,27 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             </div>
           </div>
         </div>
+        <div className="mobile-footer">
+              <div className="social-icons-mobile">
+                  <span className="social-text">FOLLOW ME</span>
+                  <br />
+                <Link href="https://twitter.com/NasirOladipo" target="_blank">
+                  <span className="twitter">{<SlSocialTwitter />}</span>
+                </Link>
+                <Link href="https://github.com/softcruder" target="_blank">
+                  <span className="github">{<FaGithub />}</span>
+                </Link>
+                <Link href="https://linkedin.com/nasirullah-oladipo" target="_blank">
+                  <span className="linkedin">{<FaLinkedin />}</span>
+                </Link>
+                <Link href="https://softcruder.hashnode.com/" target="_blank">
+                  <span className="hashnode">{<SiHashnode />}</span>
+                </Link>
+              </div>
+              <div className="mob-footer-btn">
+              <ArrowButton text="contact Me" target="_self" href="/contact" direction="right" />
+              </div>
+            </div>
   
         <style jsx>{`
           .home-layout {
@@ -98,6 +119,10 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             bottom: 0;
             left: 1rem;
           }
+
+          .mobile-footer {
+            display: none;
+          }
   
           .social-icons span {
             margin-right: 1rem;
@@ -106,6 +131,10 @@ const HomeLayout = ({ title, subtitle, intro }) => {
   
           .social-icons span:hover {
             opacity: 0.8;
+          }
+
+          span.social-text {
+            writing-mode: sideways-lr;
           }
           @media screen and (max-width: 991px) {
             section {
@@ -126,10 +155,15 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               margin-top: 2rem;
               margin-bottom: 1.3rem;
             }
+
+            .mobile-footer {
+              display-none;
+            }
           }
           @media screen and (max-width: 767px) {
             section {
-              background-size: cover;
+              background-image: none;
+              background-color: var(--bg-color);
               color: var(--secondary-color);
             }
             p {
@@ -158,7 +192,34 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               flex-direction: column-reverse;
             }
             .social-icons {
-              color: var(--secondary-color);
+              display: none;
+            }
+            
+            .mobile-footer {
+              position: absolute;
+              bottom: 0;
+              padding-left: 1rem;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              // gap: 1rem;
+            }
+
+            .social-icons-mobile {
+              justify-content: flex-start;
+              left: 0;
+            }
+    
+            .social-icons-mobile span {
+              margin-right: .5rem;
+              cursor: pointer;
+              padding-bottom: .5rem;
+            }
+
+            span.social-text {
+              display: none;
             }
           }
           

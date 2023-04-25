@@ -2,6 +2,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  min-width: 40vw;
   font-family: "Questrial", sans-serif;
 }
 
@@ -177,6 +178,7 @@ textarea.textarea:focus {
   }
   .textarea {
     margin-top: .3rem;
+    resize: none;
   }
 
   .input[type="text"], .input[type="email"]::placeholder {

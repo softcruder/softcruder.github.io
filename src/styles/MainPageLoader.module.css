@@ -80,15 +80,11 @@
   @keyframes textAnimation {
     0% {
       opacity: 0;
-      transform: translate(-50%, -50%) scale(0.5);
-    }
-    50% {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1.5);
+      transform: translate(0, 0%) scale(0.5);
 }
     100% {
       opacity: 1;
-      transform: translateX(0) scale(1);
+      transform: translateX(0) scale(1.5);
 }
   }
   
@@ -156,9 +152,29 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 20px;
-    width: 64px;
-    height: 64px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
   }
   
-  
+  @media screen and (max-width: 991px) {
+    .preloader .text {
+      animation: mobileTextAnimation 1s ease-in-out forwards 2.5s;
+    }
+
+    @keyframes mobileTextAnimation {
+      0% {
+        opacity: 0;
+        transform: translate(0, 0%) scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) scale(1.5);
+      }
+    }
+    
+    .iconWrapper {
+      width: 64px;
+      height: 64px;
+    }
+  }

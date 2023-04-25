@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Navbar from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
@@ -7,6 +8,15 @@ import Button from '@/components/Buttons/Button';
 const StyleGuide = () => {
     return (
         <>
+        <Head>
+        <title> Style Guide | Softcruder </title>
+        <meta
+          name="description"
+          content="To implement the styles used on this website you can follow the guide for styling on this page."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
             <Navbar isSticky={true} isTransparent={true} />
             <div className="style-guide">
                 <span className="big-title">Style Guide</span>
@@ -43,6 +53,12 @@ const StyleGuide = () => {
                 flex-direction: column;
                 gap: 1rem;
                 justify-content: center;
+            }
+            @media screen and (max-width: 767px) {
+                .big-title {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
             }
             `}</style>
         </>

@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <>
       <Head>
-        <title> Page Not Found | Nasirullah Oladipo </title>
+        <title> Page Not Found </title>
         <meta
           name="description"
           content="The page does not exist on this website"
@@ -78,6 +78,7 @@ const NotFound = () => {
             align-items: center;
             gap: 2;
             margin: 3% 10%;
+            height: 100vh;
           }
 
           .utility-content {
@@ -87,7 +88,6 @@ const NotFound = () => {
             justify-content: center;
             align-items: center;
             text-align: center;
-            height: 100vh;
             padding: 2rem;
           }
 
@@ -107,7 +107,7 @@ const NotFound = () => {
           }
           h1{
             font-size: 3rem;
-            font-height: 3.5rem;
+            line-height: 4rem;
           }
 
           .muted-text {
