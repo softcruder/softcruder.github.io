@@ -49,6 +49,18 @@ const AboutStory = () => {
           display: flex;
           flex-direction: row;
         }
+        @media screen and (max-width: 767px) {
+          .title {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            font-weight: bold;
+          }
+
+          .paragraph {
+            font-size: 1rem;
+            line-height: 1.3rem;
+          }
+        }
       `}</style>
     </section>
   );

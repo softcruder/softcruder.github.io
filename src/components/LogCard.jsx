@@ -39,7 +39,10 @@ const LogCard = ({ date, author, message }) => {
         text-align: center;
         width: 100%;
         border-top: 1px solid #464646;
-      }      
+      }
+      .card-message {
+        text-wrap: wrap;
+      }     
       `}</style>
     </div>
   );
