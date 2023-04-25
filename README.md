@@ -61,6 +61,7 @@ I would like to acknowledge the following people and organizations for their con
 
 * 
 * The developers of ReactJS, Vanilla CSS, React-Icons, GSAP, Octokit API, NextJS, and Github Pages.
+* [manavm1990](https://github.com/manavm1990) for the [README template](https://gist.github.com/manavm1990).
 * My friends and family for their support and encouragement.
 
 Thank you for visiting my portfolio!
