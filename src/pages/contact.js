@@ -34,8 +34,9 @@ const ContactPage = () => {
         }
 
         span {
-          display: flex;
-          align-items: flex-start;
+          margin-top: 40px;
+          padding-top: 40px;
+          text-align: center;
         }
 
         .big-title {

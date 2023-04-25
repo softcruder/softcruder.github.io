@@ -15,15 +15,15 @@ const introData = {
         second: "I write cool interactive scripts",
         third: "I use React.js, Next.js, TailwindCSS, Redux, and more.",
     },
-    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm currently helping to build amazing experiences at Raenest.",
-    notWorkingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I work with Next.js, React and CSS and I'm looking to get an internship role in Frontend Engineering or Frontend Development.",
+    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm currently helping to build seamless and amazing experiences at Raenest.",
+    notWorkingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience.  I work with Next.js, React and CSS and I'm looking to get an internship role in Frontend Engineering or Frontend Development.",
     update_work: "<Link href={https://raenest.com}>Raenest</Link>",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataAbout = {
     title: "My Story",
-    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I came across a tweet by @hackSultan about AltSchool Africa and the work they do, while i have looking for a well structured course with flexible payment options, and just when news of an industrial action by academic staff union of universities, AltSchool fits in just perfectly to my wants and situation. I enrolled at AltSchool Africa as part of the premier AltSchoolers to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js, CSS & CSS Preprocessors, Redux, and other frameworks like Next.js. I also work with no-code tools like Webflow. I'm currently looking for a frontend role in Frontend Engineering.",
+    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I came across a tweet by Sultan Akintunde about AltSchool Africa and the work they do, while i have looking for a well structured course with flexible payment options, and just when news of an industrial action by academic staff union of universities, AltSchool fits in just perfectly to my wants and situation. I enrolled at AltSchool Africa as part of the premier AltSchoolers to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js, CSS & CSS Preprocessors, Redux, and other frameworks like Next.js. I also work with no-code tools like Webflow. I'm currently looking for a frontend role in Frontend Engineering.",
 };
 
 const proficientSkills = [{

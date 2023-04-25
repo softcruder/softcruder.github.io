@@ -21,8 +21,8 @@ function Preloader() {
                 src="/images/monitor-white.svg"
                 className={styles.logoImage}
                 alt="logo"
-                width={50}
-                height={50}
+                width={25}
+                height={25}
               />
             </div>
           </div>

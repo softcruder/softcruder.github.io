@@ -4,7 +4,7 @@ import Image from "next/image";
 import { isMobile } from "react-device-detect";
 
 
-function Navbar(props) {
+function Navbar({isSticky, isTransparent }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -13,7 +13,7 @@ function Navbar(props) {
 
   return (
     <>
-      <header className={props.isSticky ? "sticky" : ""} style={{ backgroundColor: props.isTransparent && isMobile ? "transparent"  : "var(--primary-color)", }}>
+      <header className={isSticky ? "sticky" : ""} style={{ backgroundColor: isTransparent || isMobile ? "transparent!important"  : "var(--primary-color)", }}>
         <div className="brand">
           <div className="logo">
             <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
@@ -57,7 +57,6 @@ function Navbar(props) {
         )}
         <style jsx>{`
           header {
-            background-color: transparent;
             top: 0;
             height: 50px;
             display: flex;
