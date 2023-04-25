@@ -2,9 +2,9 @@ import Link from "next/link";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-function Footer() {
+function Footer(props) {
   return (
-    <footer>
+    <footer className={props.isSticky ? "sticky-footer" : ""}>
       <div className="footer-container">
         <div className="footer-section copyright">
           <p>
@@ -50,6 +50,11 @@ function Footer() {
           font-size: 12px;
           line-height: 18px;
           letter-spacing: .4px;
+        }
+
+        .sticky-footer{
+          position: fixed;
+          bottom: 0;
         }
 
         .footer-container {

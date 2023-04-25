@@ -163,7 +163,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
           @media screen and (max-width: 767px) {
             section {
               background-image: none;
-              background-color: var(--bg-color);
+              background-color: var(--black-bg-color);
               color: var(--secondary-color);
             }
             p {

@@ -1,11 +1,14 @@
 import React from "react";
 
-const LogCard = ({ date, message }) => {
+const LogCard = ({ date, author, message }) => {
   return (
     <div className="card">
       <h3 className="card-date">{date}</h3>
       <div className="card-content">
-      <div className="card-message">{message}</div>
+        <span >{author}</span>
+        <br />
+        <span>•</span>
+        <div className="card-message">{message}</div>
       </div>
       <style jsx>{`
       .card {
