@@ -54,13 +54,11 @@ Do you want to contact me? Use these channels.
 
 ## Acknowledgements
 
-<!-- TODO: List any blog posts, tutorials or plugins that you may have used to complete the project. Only list those that had a significant impact. Obviously, we all 'Google' stuff while working on our things, but maybe something in particular stood out as a 'major contributor' to your skill set for this project. -->
-<!-- 1, https://gist.github.com/manavm1990 README.md (A 'template' for a README file for 'portfolio projects.' Based on 'Dev Challenges' format.)
-    2,  -->
 I would like to acknowledge the following people and organizations for their contributions to this project:
 
 * 
 * The developers of ReactJS, Vanilla CSS, React-Icons, GSAP, Octokit API, NextJS, and Github Pages.
+* [Oluwasetemi](https://github.com/oluwasetemi) for the React classes at [AltSchool Africa](https://altschoolafrica.com).
 * [manavm1990](https://github.com/manavm1990) for the [README template](https://gist.github.com/manavm1990).
 * My friends and family for their support and encouragement.
 
