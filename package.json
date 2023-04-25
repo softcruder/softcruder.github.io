@@ -16,12 +16,13 @@
     "eslint-config-next": "13.2.4",
     "gsap": "^3.8.0",
     "next": "13.2.4",
+    "process": "^0.11.10",
     "react": "18.2.0",
     "react-content-loader": "^6.2.1",
     "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
-    "react-resume-component": "^0.0.3",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "util": "^0.12.5"
   }
 }
