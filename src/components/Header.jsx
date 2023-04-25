@@ -63,6 +63,7 @@ function Navbar({isSticky, isTransparent }) {
             justify-content: center;
             align-items: center;
             width: 100vw;
+            z-index: 999;
           }
           .sticky {
             position: fixed;
