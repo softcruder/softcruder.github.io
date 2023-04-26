@@ -53,7 +53,7 @@ const ContactForm = () => {
   
 
   return (
-    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef}>
+    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef} encType="multipart/form-data">
       <label
         className={labelClasses}
         htmlFor="name"
