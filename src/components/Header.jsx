@@ -3,15 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
 
-
-function Navbar({isSticky, isTransparent }) {
+function Navbar({ isSticky, isTransparent }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
+    function handleScroll() {
+      if (window.pageYOffset > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -24,14 +27,11 @@ function Navbar({isSticky, isTransparent }) {
     setMenuOpen(!menuOpen);
   }
 
+  const backgroundColor = isScrolled || isTransparent || isMobile ? "var(--black-bg-color)" : "var(--primary-color)";
+
   return (
     <>
-      <header
-        className={isSticky ? "sticky" : ""}
-        style={{
-          backgroundColor:
-            scrollPosition > 0 ? "var(--black-bg-color)" : isTransparent || isMobile ? "transparent!important" : "var(--primary-color)",
-        }}>
+      <header className={isSticky ? "sticky" : ""} style={{ backgroundColor }}>
         <div className="brand">
           <div className="logo">
             <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
@@ -82,6 +82,7 @@ function Navbar({isSticky, isTransparent }) {
             align-items: center;
             width: 100vw;
             z-index: 999;
+            transition: background-color 0.3s ease-in-out;
           }
           .sticky {
             position: fixed;
