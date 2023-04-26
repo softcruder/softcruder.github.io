@@ -118,6 +118,9 @@ function Footer(props) {
         }
 
         @media (min-width: 768px) {
+          footer {
+            bottom: 0;
+          }
           .footer-container {
             flex-direction: row;
             justify-content: space-between;

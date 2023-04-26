@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Button from "@/components/Buttons/Button";
 import BtnLoader from "@/components/Buttons/ButtonOps";
@@ -10,6 +10,7 @@ const ContactForm = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState("");
   const [modalMessage, setModalMessage] = useState("");
+  const formRef = useRef();
   const labelClasses = classNames(
     styles.label,
     styles.required,
@@ -40,6 +41,7 @@ const ContactForm = () => {
       setModalMessage(
         "Thank you for reaching out to me! I will be in touch as soon as possible."
       );
+      formRef.current.reset();
     }
     setShowModal(true);
     setTimeout(() => {
@@ -48,9 +50,10 @@ const ContactForm = () => {
       setModalMessage("");
     }, 10000);
   };
+  
 
   return (
-    <form className={styles.form} onSubmit={handleFormSubmit}>
+    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef} encType="multipart/form-data">
       <label
         className={labelClasses}
         htmlFor="name"

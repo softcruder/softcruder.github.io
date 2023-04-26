@@ -3,7 +3,7 @@ import { dataAbout } from "@/components/content-option";
 
 const AboutStory = () => {
   return (
-    <section>
+    <section className="about-story">
       <div className="section-container">
         <div className="container">
           <h2 className="title">{dataAbout.title}</h2>
@@ -49,16 +49,27 @@ const AboutStory = () => {
           display: flex;
           flex-direction: row;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 991px) {
           .title {
-            font-size: 3rem;
-            line-height: 3.5rem;
+            font-size: 3.5rem;
+            line-height: 4rem;
             font-weight: bold;
           }
-
           .paragraph {
             font-size: 1rem;
             line-height: 1.3rem;
+          }
+        }
+        @media screen and (max-width: 767px) {
+          .title {
+            margin-bottom: 10px;
+            font-size: 24px;
+            line-height: 30px;
+          }
+          .paragraph {
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: sentence-case;
           }
         }
       `}</style>
