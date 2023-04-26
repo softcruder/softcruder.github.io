@@ -122,8 +122,9 @@ const ContactForm = () => {
         id="attachment"
         type="file"
         name="attachment"
-        accept=".pdf,.doc,.docx"
+        accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,.gif,.svg"
         onChange={handleFileChange}
+        multiple
       />
 
       <Button
