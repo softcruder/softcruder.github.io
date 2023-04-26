@@ -3,6 +3,7 @@ const meta = {
     title: "Nasirullah Oladipo",
     subtitle: "Frontend developer",
     description: "I'm a frontend developer, I'm currently helping to build amazing experiences at {updateWork}.",
+    notDescription: "I'm a frontend developer, I'm currently looking for an internship role in frontend development or frontend engineering.",
     updateWork: "Raenest",
     favicon: "/favicon.png",
 };
@@ -23,7 +24,7 @@ const introData = {
 
 const dataAbout = {
     title: "My Story",
-    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I came across a tweet by Sultan Akintunde about AltSchool Africa and the work they do, while i have looking for a well structured course with flexible payment options, and just when news of an industrial action by academic staff union of universities, AltSchool fits in just perfectly to my wants and situation. I enrolled at AltSchool Africa as part of the premier AltSchoolers to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js, CSS & CSS Preprocessors, Redux, and other frameworks like Next.js. I also work with no-code tools like Webflow. I'm currently looking for a frontend role in Frontend Engineering.",
+    aboutme: "I learnt about tech in 2020, but only got active in 2021, to writing HTML, CSS and JavaScript websites. I came across a tweet by Sultan Akintunde about AltSchool Africa and the work they do, while I have been looking for a well structured course with flexible payment options, and just when news of an industrial action by Academic Staff Union of Universities was brewing, AltSchool fits in just perfectly to my wants and situation. I enrolled at AltSchool Africa as part of the premier AltSchoolers to learn more about web development and I'm currently taking in diploma in Software Engineering majoring in Frontend, learning React.js, Vue.js, CSS & CSS Preprocessors, Redux, and other frameworks like Next.js. I also work with no-code tools like Webflow. I'm currently looking for a frontend role in Frontend Engineering.",
 };
 
 const proficientSkills = [{
@@ -134,7 +135,7 @@ const dataPortfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "hey@softcruder.me",
     YOUR_FONE: "(234)90 106 067 48",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "Send me a message and I'll get back to you as soon as possible.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",

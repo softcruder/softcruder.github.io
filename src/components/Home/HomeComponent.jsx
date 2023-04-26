@@ -17,7 +17,7 @@ const HomeLayout = ({ title, subtitle, intro }) => {
             <p>{intro}</p>
             <div className="button-container">
               <Button text="Projects" href="/projects" target="_self" />
-              <ArrowButton text="About Me" href="/about" direction="right" />
+              <ArrowButton text="About Me" href="/about" direction="right" target="_self" />
             </div>
             <div className="social-icons">
                 <span className="social-text">FOLLOW ME</span>
@@ -158,6 +158,13 @@ const HomeLayout = ({ title, subtitle, intro }) => {
 
             .mobile-footer {
               display-none;
+            }
+            .social-text {
+              color: var(--secondary-color);
+            }
+            
+            p {
+              color: var(--secondary-color) !important;
             }
           }
           @media screen and (max-width: 767px) {

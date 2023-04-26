@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "@/components/Header";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 const ContactPage = () => {
   return (
@@ -17,14 +17,14 @@ const ContactPage = () => {
       <section className="wrap-page">
         <div className="contact-block">
           <span className="big-title">Contact</span>
-          <div className="form-component"><Contact /></div>
+          <div className="form-component"><ContactForm /></div>
         </div>
       </section>
       <Footer />
       <style jsx>{`
         section {
           padding: 11% 10%;
-          background-color: var(--bg-color);
+          background-color: var(--black-bg-color);
         }
 
         .contact-block {
@@ -49,7 +49,7 @@ const ContactPage = () => {
         }
 
         .form-component {
-          margin-top: 20px;
+          margin-top: 50px;
           min-width: 400px;
         }
 

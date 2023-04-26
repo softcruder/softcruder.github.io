@@ -23,7 +23,7 @@ export default function Home() {
         <title> {meta.title} | {meta.subtitle} </title>
         <meta
           name="description"
-          content={meta.description}
+          content={meta.notDescription}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -31,6 +31,13 @@ export default function Home() {
       {loading ? <MainLoader /> : null}
       <Navbar isSticky={true} isTransparent={true} />
       <HomeLayout title={introData.title} subtitle={introData.subtitle} intro={introData.notWorkingDescription} />
+      <style jsx>{`
+        @media screen and (max-width: 991px) {
+          header {
+            background-color: var(--primary-color) !important;
+          }
+        }
+      `}</style>
     </>
   );
 }

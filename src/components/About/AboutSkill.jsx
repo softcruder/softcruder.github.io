@@ -86,20 +86,36 @@ const AboutSkill = ({ title }) => {
           line-height: 3.5rem;
           font-weight: bold;
         }
-      }
+        .content-container {
+          padding-top: 0;
+        }
+        .skill-content {
+          border: none;
+        }
 
-      @media only screen and (max-width: 415px) {
-        .skill-container {
+      @media only screen and (max-width: 480px) {
+        .section-container {
           flex-direction: column;
+          gap: 2rem;
+        }
+
+        .title {
+          margin-bottom: 10px;
+          font-size: 24px;
+          line-height: 30px;
         }
 
         .skill-content {
-          flex-direction: column;
-          align-items: flex-start;
+          padding: 0.5rem 0;
         }
 
         .skill-icon {
           margin-bottom: 0.5rem;
+        }
+
+        .skill-name {
+          font-size: 12px;
+          line-height: 18px;
         }
       }
     `}</style>

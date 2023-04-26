@@ -1,8 +1,9 @@
 import React from "react";
 
+
 const AboutHeader = () => {
   return (
-    <div>
+    <section className="about-header">
       <div className="header-container">
         <div className="overlay"></div>
         <h1 className="title">About Me</h1>
@@ -19,11 +20,15 @@ const AboutHeader = () => {
           background-position: center;
         }
 
-        .overlay {
-          position: absolute;
-          inset: 0;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
+        .dark-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.3);
+          z-index: 1;
+        }        
 
         .title {
           position: absolute;
@@ -31,8 +36,28 @@ const AboutHeader = () => {
           font-weight: bold;
           color: white;
         }
+        @media screen and (max-width: 479px){
+          .title {
+            font-size: 12vw;
+            line-height: 13vw;
+        }
+          
+        @media screen and (max-width: 767px) {
+          .title {
+            font-size: 60px;
+            line-height: 66px;
+          }
+        }
+        
+        @media screen and (max-width: 991px) {
+          .title {
+            margin-bottom: 16px;
+            font-size: 72px;
+            line-height: 78px;
+          }
+        }
       `}</style>
-    </div>
+    </section>
   );
 };
 
