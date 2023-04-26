@@ -53,7 +53,7 @@ const ContactForm = () => {
   
 
   return (
-    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef}>
+    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef} enctype="multipart/form-data">
       <label
         className={labelClasses}
         htmlFor="name"
@@ -125,8 +125,9 @@ const ContactForm = () => {
         id="attachment"
         type="file"
         name="attachment"
-        accept=".pdf,.doc,.docx"
+        accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,.gif,.svg"
         onChange={handleFileChange}
+        multiple
       />
 
       <Button

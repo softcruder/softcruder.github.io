@@ -62,7 +62,6 @@ const AboutSkill = ({ title }) => {
         justify-content: space-between;
         gap: 1rem;
         padding: 0.5rem;
-        border: 1px solid var(--secondary-color);
       }
 
       .skill-icon {

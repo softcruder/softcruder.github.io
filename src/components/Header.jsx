@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { isMobile } from "react-device-detect";
@@ -6,6 +6,19 @@ import { isMobile } from "react-device-detect";
 
 function Navbar({isSticky, isTransparent }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
@@ -13,7 +26,12 @@ function Navbar({isSticky, isTransparent }) {
 
   return (
     <>
-      <header className={isSticky ? "sticky" : ""} style={{ backgroundColor: isTransparent || isMobile ? "transparent!important"  : "var(--primary-color)", }}>
+      <header
+        className={isSticky ? "sticky" : ""}
+        style={{
+          backgroundColor:
+            scrollPosition > 0 ? "var(--black-bg-color)" : isTransparent || isMobile ? "transparent!important" : "var(--primary-color)",
+        }}>
         <div className="brand">
           <div className="logo">
             <Link href="/"> &lt;SOFTCRÜDER /&gt;</Link>
