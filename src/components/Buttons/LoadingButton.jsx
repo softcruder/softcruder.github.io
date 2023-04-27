@@ -37,7 +37,7 @@ const ButtonLoad = (props) => {
       {...buttonProps}
       {...props}
     >
-      {isLoading ? <BtnLoader /> : text}
+      {isloading ? <BtnLoader /> : text}
     </ButtonElement>
   );
 };

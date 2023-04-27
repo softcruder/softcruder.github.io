@@ -6,7 +6,6 @@ import styles from "@/styles/ContactForm.module.css";
 import classNames from "classnames";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xjvdpvrv");
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState("");
   const [modalMessage, setModalMessage] = useState("");
@@ -28,32 +27,36 @@ const ContactForm = () => {
     setModalMessage("");
   };
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    const result = await handleSubmit(event);
-    if (result.errors) {
-      setModalType("error");
-      setModalMessage(
-        "An error occurred while submitting your message. Please try again later."
-      );
-    } else {
-      setModalType("success");
-      setModalMessage(
-        "Thank you for reaching out to me! I will be in touch as soon as possible."
-      );
-      formRef.current.reset();
-    }
-    setShowModal(true);
-    setTimeout(() => {
-      setShowModal(false);
-      setModalType("");
-      setModalMessage("");
-    }, 10000);
-  };
+  const [state, handleSubmit] = useForm("xjvdpvrv", {
+    onSubmit: async (values, e) => {
+      e.preventDefault();
+      const formData = new FormData(formRef.current);
+      try {
+        await handleSubmit(formData);
+        setModalType("success");
+        setModalMessage(
+          "Thank you for reaching out to me! I will be in touch as soon as possible."
+        );
+        formRef.current.reset();
+      } catch (error) {
+        setModalType("error");
+        setModalMessage(
+          "An error occurred while submitting your message. Please try again later."
+        );
+      }
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false);
+        setModalType("");
+        setModalMessage("");
+      }, 10000);
+    },
+  });
+  
   
 
   return (
-    <form className={styles.form} onSubmit={handleFormSubmit} ref={formRef} enctype="multipart/form-data">
+    <form className={styles.form} onSubmit={handleSubmit} ref={formRef} encType="multipart/form-data">
       <label
         className={labelClasses}
         htmlFor="name"

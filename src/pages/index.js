@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title> Nasirullah Oladipo | {meta.subtitle} </title>
+        <title> Nasirullah Oladipo | Frontend Developer </title>
         <meta
           name="description"
           content={meta.notDescription}

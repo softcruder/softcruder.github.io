@@ -16,8 +16,8 @@ const introData = {
         second: "I write cool interactive scripts",
         third: "I use React.js, Next.js, TailwindCSS, Redux, and more.",
     },
-    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience. I'm currently helping to build seamless and amazing experiences at Raenest.",
-    notWorkingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote based frontend developer with few months of experience.  I work with Next.js, React and CSS and I'm looking to get an internship role in Frontend Engineering or Frontend Development.",
+    workingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote frontend developer with few months of experience. I'm currently helping to build seamless and amazing experiences at Raenest.",
+    notWorkingDescription: "Hey there! My name is Nasirullah Oladipo and I'm a remote frontend developer with few months of experience.  I work with Next.js, React and CSS and I'm looking to get an internship role in Frontend Engineering or Frontend Development.",
     update_work: "<Link href={https://raenest.com}>Raenest</Link>",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
