@@ -56,7 +56,7 @@ const ContactForm = () => {
   
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} ref={formRef} encType="multipart/form-data">
+    <form className={styles.form} onSubmit={handleSubmit} ref={formRef} >
       <label
         className={labelClasses}
         htmlFor="name"
@@ -120,7 +120,7 @@ const ContactForm = () => {
       ></textarea>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-      <label className={styles.label} htmlFor="attachment">
+      {/* <label className={styles.label} htmlFor="attachment">
         Attach file
       </label>
       <input
@@ -131,7 +131,7 @@ const ContactForm = () => {
         accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,.gif,.svg"
         onChange={handleFileChange}
         multiple
-      />
+      /> */}
 
       <Button
         type="submit"
