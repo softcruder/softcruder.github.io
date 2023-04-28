@@ -133,12 +133,8 @@ const ContactForm = () => {
         multiple
       /> */}
 
-      <Button
-        type="submit"
-        disabled={state.submitting}
-        isLoading={state.submitting}
-        text={state.submitting ? <BtnLoader /> : "Submit"}
-      />
+      <Button type="submit" disabled={state.submitting} isLoading={state.submitting} text={state.submitting ? <BtnLoader /> : "Submit"}/>
+
 
       {showModal && (
         <div
