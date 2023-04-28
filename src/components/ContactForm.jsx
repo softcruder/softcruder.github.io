@@ -120,18 +120,18 @@ const ContactForm = () => {
       ></textarea>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-      {/* <label className={styles.label} htmlFor="attachment">
-        Attach file
-      </label>
-      <input
-        className={styles.input}
-        id="attachment"
-        type="file"
-        name="attachment"
-        accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,.gif,.svg"
-        onChange={handleFileChange}
-        multiple
-      /> */}
+//       <label className={styles.label} htmlFor="attachment">
+//         Attach file
+//       </label>
+//       <input
+//         className={styles.input}
+//         id="attachment"
+//         type="file"
+//         name="attachment"
+//         accept=".pdf,.doc,.docx,.txt,.rtf,.png,.jpg,.jpeg,.gif,.svg"
+//         onChange={handleFileChange}
+//         multiple
+//       />
 
       <Button
         type="submit"
