@@ -1,20 +1,24 @@
-import * as React from "react";
-import Image from "next/image";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Button from "@/components/Buttons/Button";
 import ArrowButton from "@components/Buttons/ArrowButton";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiHashnode } from "react-icons/si";
-import { SlSocialTwitter } from "react-icons/sl"
+import { SlSocialTwitter } from "react-icons/sl";
 
 const HomeLayout = ({ title, subtitle, intro }) => {
-    return (
-      <section className="home-layout">
-        <div className="split">
-          <div className="content-container">
-            <span className="big-title">{title}</span>
-            <h2>{subtitle}</h2>
-            <p>{intro}</p>
+
+  return (
+    <section className="home-layout">
+      <div className="split">
+        <div className="content-container">
+          <span className="big-title">
+            {title}
+          </span>
+          <h2>{subtitle}</h2>
+          <p className="intro">
+            Hey there! <br /> {intro}
+          </p>
             <div className="button-container">
               <Button text="Projects" href="/projects" target="_self" />
               <ArrowButton text="About Me" href="/about" direction="right" target="_self" />
@@ -185,10 +189,13 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               line-height: 3.5vw;
               letter-spacing: .2px;
             }
+            .intro{
+              margin-bottom: 1rem;
+            }
             .content-container {
               width: 100%;
               padding: 0 32px 0 32px;
-              margin-top: 35%;
+              margin-top: 30%;
             }
             .big-title {
               margin-bottom: 1rem;
