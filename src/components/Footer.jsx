@@ -11,7 +11,6 @@ function Footer(props) {
             <span className="copy-text">© Nasirullah Oladipo</span> <br />
             Made with <span className="alt-link">React {<FaReact className="logo" />}</span>  and powered by <Link href="https://nextjs.org" target="_blank"> <span className="alt-link">Next.js {<SiNextdotjs />}</span></Link>. | Portfolio Version: <Link href="/changelog"><span className="alt-link">v2.1</span></Link>
           </p>
-          
         </div>
         <div className="footer-section footer-links">
           <ul>
@@ -22,7 +21,7 @@ function Footer(props) {
             </li>
             <li>
               <Link href="https://softcruder.github.io/v1">
-              <span className="footer-item">version 1.*</span>
+              <span className="footer-item">version 1</span>
               </Link>
             </li>
             <li>
@@ -114,7 +113,7 @@ function Footer(props) {
         }
 
         .copy-text {
-          color: var(--text-color);
+          color: white;
         }
 
         @media (min-width: 768px) {
