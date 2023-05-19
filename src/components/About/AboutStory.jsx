@@ -7,7 +7,7 @@ const AboutStory = () => {
       <div className="section-container">
         <div className="container">
           <h2 className="title">{dataAbout.title}</h2>
-          <p className="paragraph">{dataAbout.aboutme}
+          <p className="paragraph">{dataAbout.aboutmeWork}
           </p>
         </div>
       </div>
