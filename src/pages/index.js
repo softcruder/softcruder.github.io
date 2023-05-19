@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
       {loading ? <MainLoader /> : null}
       <Navbar isSticky={true} isTransparent={true} />
-      <HomeLayout title={introData.title} subtitle={introData.subtitle} intro={introData.notWorkingDescription} />
+      <HomeLayout title={introData.title} subtitle={introData.subtitle} intro={introData.workingDescription} />
       <style jsx>{`
         @media screen and (max-width: 991px) {
           header {
