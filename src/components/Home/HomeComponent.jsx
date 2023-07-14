@@ -32,10 +32,10 @@ const HomeLayout = ({ title, subtitle, intro }) => {
               <Link href="https://github.com/softcruder" target="_blank">
                 <span className="github">{<FaGithub />}</span>
               </Link>
-              <Link href="https://linkedin.com/nasirullah-oladipo" target="_blank">
+              <Link href="https://linkedin.com/in/nasirullah-oladipo" target="_blank">
                 <span className="linkedin">{<FaLinkedin />}</span>
               </Link>
-              <Link href="https://softcruder.hashnode.com/" target="_blank">
+              <Link href="https://softcruder.hashnode.dev/" target="_blank">
                 <span className="hashnode">{<SiHashnode />}</span>
               </Link>
             </div>
@@ -51,10 +51,10 @@ const HomeLayout = ({ title, subtitle, intro }) => {
                 <Link href="https://github.com/softcruder" target="_blank">
                   <span className="github">{<FaGithub />}</span>
                 </Link>
-                <Link href="https://linkedin.com/nasirullah-oladipo" target="_blank">
+                <Link href="https://linkedin.com/in/nasirullah-oladipo" target="_blank">
                   <span className="linkedin">{<FaLinkedin />}</span>
                 </Link>
-                <Link href="https://softcruder.hashnode.com/" target="_blank">
+                <Link href="https://softcruder.hashnode.dev/" target="_blank">
                   <span className="hashnode">{<SiHashnode />}</span>
                 </Link>
               </div>
