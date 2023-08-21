@@ -49,7 +49,7 @@ const Changelog = () => {
         commits.map((commit) => (
           <LogCard
             key={commit.sha}
-            date={new Date(commit.commit.author.date).toLocaleDateString()}
+            date={new Date(commit.commit.author.date).toLocaleString('en-NG', { timeZone: 'Africa/Lagos', timeZoneName: 'short', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true })}
             author={commit.commit.author.name}
             message={commit.commit.message}
           />
@@ -57,7 +57,7 @@ const Changelog = () => {
       ) : (
         <>
         <Preloader />
-        <p>Loading commits...</p>
+        <p className="loading">Loading commits...</p>
         </>
       )}
         <Footer />
@@ -80,7 +80,7 @@ const Changelog = () => {
           font-size: 3rem;
           text-align: center;
       }
-      .error-message {
+      .error-message, .loading {
         display: flex;
         flex-direction: column;
         align-items: center;
