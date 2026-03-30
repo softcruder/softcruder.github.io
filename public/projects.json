@@ -5,7 +5,7 @@
     "category": "Portfolio",
     "description": "Second iteration of my portfolio website - built with Next.js, Tailwind CSS, and a design system.",
     "image": "/images/project-1.png",
-    "previewUrl": "https://softcruder.github.io",
+    "previewUrl": "https://softcruder.me",
     "demoLink": "https://softcruder.me",
     "githubLink": "https://github.com/softcruder/softcruder.github.io"
   },
