@@ -22,7 +22,10 @@ const tokenSwatches: { className: string; label: string }[] = [
   { className: "bg-site-surface", label: "site-surface (cards)" },
   { className: "bg-site-canvas", label: "site-canvas (loader / alt)" },
   { className: "bg-site-ink", label: "site-ink (primary text on dark)" },
-  { className: "bg-muted-foreground", label: "muted-foreground (secondary text)" },
+  {
+    className: "bg-muted-foreground",
+    label: "muted-foreground (secondary text)",
+  },
 ];
 
 export default function StyleGuide() {
@@ -30,7 +33,7 @@ export default function StyleGuide() {
     <>
       <PageSeo
         title="Style guide"
-        description="Design tokens, typography, and components used on softcruder.github.io."
+        description="Design tokens, typography, and components used on softcruder.me."
       />
       <Navbar isSticky={true} isTransparent={false} />
       <main className="z-[-1] bg-site-page pb-16 pt-[100px] text-site-ink">
@@ -47,7 +50,7 @@ export default function StyleGuide() {
               <code className="rounded bg-site-surface px-1.5 py-0.5 text-sm text-site-ink">
                 src/styles/globals.css
               </code>
-              , Tailwind v4 + shadcn under{" "}
+              , Tailwind v4 + shadcn UI premitives under{" "}
               <code className="rounded bg-site-surface px-1.5 py-0.5 text-sm text-site-ink">
                 src/components/v2/ui
               </code>

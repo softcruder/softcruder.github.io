@@ -13,7 +13,7 @@ export const resume = {
   name: "Nasirullah Oladipo",
   headline: "Software Engineer | Retool Platform Admin",
   location: "Ilorin | Kaduna | Lagos, Nigeria. | Remote",
-  email: "softcruder@gmail.com",
+  email: "hey@softcruder.me",
   phone: "(234) 90 106 067 48",
   linkedin: "https://www.linkedin.com/in/nasirullah-oladipo",
   /** Personal and work GitHub accounts (see src/config/social.ts). */
@@ -21,7 +21,7 @@ export const resume = {
     { label: "Personal", url: "https://github.com/softcruder" },
     { label: "Work", url: "https://github.com/softcruder-rn" },
   ],
-  website: "https://softcruder.github.io",
+  website: "https://softcruder.me",
   summary:
     "Software Developer with a background in frontend and a passion for efficient web applications. Proficient in JavaScript, Next.js, Retool, PostgreSQL, and related technologies. At Raenest I build internal tools and workflows, integrate with APIs for internal tooling, and work in an Agile engineering team. Diploma in Software Engineering (Frontend) from AltSchool Africa; B.Tech in Computer Science from the Federal University of Technology, Minna, Nigeria.",
 
