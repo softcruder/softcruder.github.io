@@ -1,8 +1,41 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Design tokens: softcruder (sc) — semantic colors + legacy site vars */
 :root {
+  --font-dm-sans: "DM Sans", system-ui, sans-serif;
+  --font-questrial: "Questrial", system-ui, sans-serif;
+
+  --background: hsl(0 0% 6%);
+  --foreground: hsl(0 0% 100%);
+  --card: hsl(0 0% 8%);
+  --card-foreground: hsl(0 0% 100%);
+  --popover: hsl(0 0% 8%);
+  --popover-foreground: hsl(0 0% 100%);
+  --primary: hsl(0 0% 5%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(0 0% 100%);
+  --secondary-foreground: hsl(0 0% 5%);
+  --muted: hsl(0 0% 14%);
+  --muted-foreground: hsl(0 0% 53%);
+  --accent: hsl(0 0% 12%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 72% 51%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(0 0% 18%);
+  --input: hsl(0 0% 18%);
+  --ring: hsl(0 0% 83%);
+  --radius: 0.5rem;
+
+  --brand-bg: #101010;
+  --brand-surface: #0d0d0d;
+  --brand-ink: #ffffff;
+  --brand-muted: #888888;
+
   --bg-color: #222;
   --black-bg-color: #101010;
   --primary-color: #0d0d0d;
-  --secondary-color: #FFFFFF;
+  --secondary-color: #ffffff;
   --text-color: #fff;
   --text-color-2: #888888;
   --big-title: 8vw/9vw DM Sans;
@@ -16,29 +49,104 @@
   --muted-text: 16px/20px Questrial;
 }
 
+@theme inline {
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-dm-sans);
+  --font-body: var(--font-questrial);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-brand-bg: var(--brand-bg);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-muted: var(--brand-muted);
+
+  /* Site legacy palette as semantic utilities (prefer over arbitrary [var(--…)] ) */
+  --color-site-canvas: var(--bg-color);
+  --color-site-page: var(--black-bg-color);
+  --color-site-surface: var(--primary-color);
+  --color-site-ink: var(--secondary-color);
+  --color-site-ink-muted: var(--text-color-2);
+  --color-site-ink-body: var(--text-color);
+  --color-site-strike: #a9a9a9;
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height, auto);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height, auto);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+}
+
 @font-face {
-  font-family: 'DM Sans';
-  src: url('/fonts/DMSans-Regular.ttf') format('truetype');
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Questrial';
-  src: url('/fonts/Questrial-Regular.ttf') format('truetype');
+  font-family: "Questrial";
+  src: url("/fonts/Questrial-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-*{
-  box-sizing: border-box;
+html {
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  overflow-x: clip;
+  max-width: 100%;
   background-color: var(--black-bg-color);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: #fff;
   font-size: 14px;
   line-height: 20px;
@@ -53,7 +161,7 @@ a {
 p {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: Questrial,sans-serif;
+  font-family: Questrial, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -67,31 +175,28 @@ p {
 .page-title {
   margin-top: 24px;
   margin-bottom: 80px;
-  text-align: center
+  text-align: center;
 }
 
 .page-title.section-header {
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .style-guide-title-2 {
   font-size: 30px;
   line-height: 36px;
-  text-align: center
+  text-align: center;
 }
 
-.numbering, ol li {
+.numbering,
+ol li {
   display: inline-block;
   margin-left: 8px;
-  font-family: Questrial,sans-serif;
+  font-family: Questrial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  text-shadow: 0 0 16px rgba(16,16,16,.3);
+  text-shadow: 0 0 16px rgba(16, 16, 16, 0.3);
 }
-
-
-
-
 
 @media screen and (max-width: 767px) {
   :root {
@@ -111,6 +216,67 @@ p {
   }
 }
 
-@media screen and (min-width: 961px) {
-  
+/* Home: match header bar to hero on tablet (legacy behavior) */
+@media (max-width: 991px) {
+  .home-page header {
+    background-color: var(--primary-color) !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .resume-print a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
+/* v2 MainPageLoader — dot bounce only; phase order is driven in React (see MainPageLoader.tsx) */
+@keyframes main-loader-dot {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes main-preloader-strike-draw {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes main-preloader-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-preloader-dot {
+  animation: main-loader-dot 1s ease-in-out infinite;
+}
+
+.main-preloader-strike-line {
+  transform-origin: left center;
+  animation: main-preloader-strike-draw 0.45s ease-out both;
+}
+
+.main-preloader-fade-up {
+  animation: main-preloader-fade-up 0.45s ease-out both;
 }
