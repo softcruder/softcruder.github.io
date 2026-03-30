@@ -12,10 +12,12 @@ const PAGE_SIZE = 15;
 const REPO = { owner: "softcruder", name: "softcruder.github.io" } as const;
 
 export default function Changelog() {
-  const { data: commits = [], error, isLoading, mutate } = useGithubCommits(
-    REPO.owner,
-    REPO.name,
-  );
+  const {
+    data: commits = [],
+    error,
+    isLoading,
+    mutate,
+  } = useGithubCommits(REPO.owner, REPO.name);
   const [page, setPage] = useState(0);
 
   const totalPages = Math.max(1, Math.ceil(commits.length / PAGE_SIZE));

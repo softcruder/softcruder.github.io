@@ -25,7 +25,7 @@ export default function LicensingPage() {
             },
             {
               text: ". You have to change all the images if you are replicating this template. Please be careful when using other images from the internet. They can be copyright protected, which can lead to issues with the copyright owner and can even lead to big fines. Any business with the same name is intentional. For copyright issues, please contact me directly at ",
-              linkUrl: "mailto:softcruder@gmail.com",
+              linkUrl: "mailto:hey@softcruder.me",
               linkText: "softcruder's mail",
             },
             {
@@ -50,12 +50,7 @@ export default function LicensingPage() {
               linkText: "Lightning Lab design studio",
             },
             {
-              text: ". It was built with ",
-              linkUrl: "https://webflow.com",
-              linkText: "Webflow",
-            },
-            {
-              text: "; this site is implemented with React, Next.js, and Tailwind CSS.",
+              text: ".",
             },
           ]}
         />

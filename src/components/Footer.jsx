@@ -9,7 +9,19 @@ function Footer(props) {
         <div className="footer-section copyright">
           <p>
             <span className="copy-text">© Nasirullah Oladipo</span> <br />
-            Made with <span className="alt-link">React {<FaReact className="logo" />}</span>  and powered by <Link href="https://nextjs.org" target="_blank"> <span className="alt-link">Next.js {<SiNextdotjs />}</span></Link>. | Portfolio Version: <Link href="/changelog"><span className="alt-link">v2.1</span></Link>
+            Made with{" "}
+            <span className="alt-link">
+              React {<FaReact className="logo" />}
+            </span>{" "}
+            and powered by{" "}
+            <Link href="https://nextjs.org" target="_blank">
+              {" "}
+              <span className="alt-link">Next.js {<SiNextdotjs />}</span>
+            </Link>
+            . | Portfolio Version:{" "}
+            <Link href="/changelog">
+              <span className="alt-link">v2.1</span>
+            </Link>
           </p>
         </div>
         <div className="footer-section footer-links">
@@ -20,18 +32,18 @@ function Footer(props) {
               </Link>
             </li>
             <li>
-              <Link href="https://softcruder.github.io/v1">
-              <span className="footer-item">version 1</span>
+              <Link href="https://softcruder.me/v1">
+                <span className="footer-item">version 1</span>
               </Link>
             </li>
             <li>
               <Link href="/style-guide">
-              <span className="footer-item">Style Guide</span>
+                <span className="footer-item">Style Guide</span>
               </Link>
             </li>
             <li>
               <Link href="/licensing">
-              <span className="footer-item">Licensing</span>
+                <span className="footer-item">Licensing</span>
               </Link>
             </li>
           </ul>
@@ -48,10 +60,10 @@ function Footer(props) {
           margin-top: 20px;
           font-size: 12px;
           line-height: 18px;
-          letter-spacing: .4px;
+          letter-spacing: 0.4px;
         }
 
-        .sticky-footer{
+        .sticky-footer {
           position: fixed;
           bottom: 0;
         }
@@ -77,7 +89,7 @@ function Footer(props) {
           margin: 0;
           font-size: 16px;
           line-height: 22px;
-          letter-spacing: .4px;
+          letter-spacing: 0.4px;
         }
 
         .footer-links ul {
@@ -153,7 +165,7 @@ function Footer(props) {
           .footer-container {
             flex-direction: column;
           }
-          .footer-section{
+          .footer-section {
             text-align: center;
             padding: 0;
           }
